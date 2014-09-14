@@ -25,14 +25,16 @@
 
 	<script> 
     $(function(){
-      $("#navigation").load("nav.html"); 
+      $("#navigation").load("nav.html",function() { 
+	      $("#b").animate({"opacity":1},300);
+      });
     });
 	</script>
 
 
 
   </head>
-  <body>
+  <body id="b" style="opacity:0">
 
    <div id="navigation"></div>
 

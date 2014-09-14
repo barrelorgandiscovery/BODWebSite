@@ -23,7 +23,9 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script> 
     $(function(){
-      $("#navigation").load("nav.html"); 
+      $("#navigation").load("nav.html",function() { 
+	      $("#b").animate({"opacity":1},300);
+      });
     });
 	</script>
 
@@ -33,7 +35,7 @@
 
 
   </head>
-  <body>
+  <body id="b" style="opacity:0;">
 
    <div id="navigation"></div>
 
@@ -41,7 +43,7 @@
 
 		<div class="jumbotron">
 		  <h1>APrint Studio 2014</h1>
-		  <p>Application de création dédié aux arrangeurs et utiliateurs avertis, permet l'adaptation de morceaux de musique pour les orgues de barbarie</p>
+		  <p>Application dédié aux arrangeurs et utilisateurs avertis, permettant l'adaptation de morceaux de musique pour les orgues de barbarie</p>
 
 		  <p>
 			<a class="btn btn-primary btn-lg" role="button" href="http://www.barrel-organ-discovery.org/builds/2014/APrintStudio-x32-2014.4.288.exe">Telecharger la version 2014.4 (Windows)</a>
@@ -52,7 +54,7 @@
 
 <h3>Presentation</h3>
 
-<p> Ce logiciel complète un outil d'édition musical (MIDI) pour finaliser les étapes de mise en carton, et écouter le resultat en rendu realiste. Des outils de scripting et de manipulation de carton permettent de corriger rapidement des problemes dans le carton, ou de réaliser des opérations complexes de transformation. Des outils permettent également de mieux communiquer le resultat sous forme de fichier WAV, ou videos MOV, ou fichiers MIDI.</p>
+<p> Ce logiciel complète un outil d'édition musical (MIDI) pour finaliser les étapes de mise en carton, et écouter le resultat en rendu réaliste. Des outils de scripting et de manipulation de carton permettent de corriger rapidement des problèmes dans le carton, ou de réaliser des opérations complexes de transformation. Des outils permettent également de mieux communiquer le resultat sous forme de fichier WAV, ou videos MOV, ou fichiers MIDI.</p>
 
 <h3>Copies d'écran</h3>
 
@@ -62,7 +64,7 @@
       <img src="resources/presentation/s1.png" alt="Menu Principal.">
       <div class="caption">
         <h3>Menu Principal</h3>
-        <p>fenetre d'accès aux fonctionnalités principales</p>
+        <p>fenêtre d'accès rapide aux fonctionnalités principales</p>
       </div>
     </div>
   </div>
@@ -72,7 +74,7 @@
       <img src="resources/presentation/s2.png" alt="Vue carton.">
       <div class="caption">
         <h3>Vision du carton</h3>
-        <p>permet la modification, l'écoute et la modification du carton</p>
+        <p>permet l'écoute, la modification, et le travail sur les reprise unitaires ou en script du carton, des modules de perforation, d'export peuvent y être adjoint</p>
       </div>
     </div>
   </div>
@@ -82,7 +84,7 @@
       <img src="resources/presentation/s3.png" alt="Gestion des instruments.">
       <div class="caption">
         <h3>Gestion des instruments</h3>
-        <p>Fenetre de consultation, d'import et de création d'instrument</p>
+        <p>Le logiciel dispose d'un certain nombre d'instruments de base, d'autres peuvent être importés simplement par glissé déposé</p>
       </div>
     </div>
     </div>
@@ -93,7 +95,7 @@
       <img src="resources/presentation/s4.png" alt="Création ou modification d'un instruments.">
       <div class="caption">
         <h3>Modification/Création d'un instruments</h3>
-        <p>Fenetre de création ou modification d'un instrument</p>
+        <p>Chaque instrument est décrit avec toutes ses capacités (gammes, registres, percussions, sons), un éditeur graphique complet propose un accès simplifié</p>
       </div>
     </div>
     </div>
@@ -103,7 +105,7 @@
       <img src="resources/presentation/s5.png" alt="modification sonores associée à un instrument">
       <div class="caption">
         <h3>Modification, ajustement des sons d'un instrument</h3>
-        <p>Fenetre de modification des sons associés aux notes, registres</p>
+        <p>Un éditeur sonore intégré permet de retravailler les échantillons Wav utilisés dans l'instruments.</p>
       </div>
     </div>
     </div>
@@ -112,7 +114,7 @@
       <img src="resources/presentation/s6.png" alt="Fenetre de selection de l'instrument">
       <div class="caption">
         <h3>Selection de l'instrument</h3>
-        <p>Fenetre de sélection de l'instrument et options associées pour l'import de fichiers Midi ou Kar</p>
+        <p>Les cartons sont créés à partir de fichier Midi ou Kar, contenant les notes de l'instrument.</p>
       </div>
     </div>
     </div>
@@ -120,8 +122,8 @@
      <div class="thumbnail">
       <img src="resources/presentation/s7.png" alt="Fenetre de prévisualisation de l'impression">
       <div class="caption">
-        <h3>Prévisualisation de l'impression</h3>
-        <p>Prévisualisation de l'impression du ponçif avant impression</p>
+        <h3>Impression de cartons</h3>
+        <p>Prévisualisation de l'impression du ponçif avant impression, et impression sous différents formats</p>
       </div>
     </div>
     </div>
