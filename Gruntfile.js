@@ -1,7 +1,6 @@
 "use strict";
 
 
-
 module.exports = function(grunt) {
 
     // Project configuration.
@@ -16,43 +15,63 @@ module.exports = function(grunt) {
             }
         },
 
-		copy: {
-		  main: {
-			files: [
-			  // includes files within path and its sub-directories
-			  {expand:true,cwd:'bower_components/jquery/dist',src:  ['**'], dest: 'dist/lib/jquery/'},
-			  {expand:true,cwd:'bower_components/magic',src:  ['*.css'], dest: 'dist/lib/magic/'},
-			  {expand:true,cwd:'bower_components/bootstrap/dist',src:  ['**'], dest: 'dist/lib/bootstrap/'}
+        copy: {
+            main: {
+                files: [
+                    // includes files within path and its sub-directories
+                    {
+                        expand: true,
+                        cwd: 'bower_components/jquery/dist',
+                        src: ['**'],
+                        dest: 'dist/lib/jquery/'
+                    }, {
+                        expand: true,
+                        cwd: 'bower_components/magic',
+                        src: ['*.css'],
+                        dest: 'dist/lib/magic/'
+                    }, {
+                        expand: true,
+                        cwd: 'bower_components/bootstrap/dist',
+                        src: ['**'],
+                        dest: 'dist/lib/bootstrap/'
+                    }
 
-			]
-		  },
-		 resources : {
-			files: [
-			  {expand:true,src:  ['resources/**'], dest: 'dist/'}
-			]
-		 },
-		 wiki : {
-			files: [
-			  {expand:true,src:  ['wiki/**'], dest: 'dist/'}
-			]
-		 },
-		 htmlfiles : {
-			files :[
-			  {expand: true, src: ['*.html',"*.css"], dest: 'dist/', filter: 'isFile' }
-			],
-			options: {
-						process: function (content, srcpath) {
-							var res = content.replace(/bower_components\/(.*)\/dist/g,"lib/\$1");
-							res = res.replace(/bower_components\/magic/g,"lib/magic");
-							return res;
-						}
-					}
-			} 
-		},
+                ]
+            },
+            resources: {
+                files: [{
+                    expand: true,
+                    src: ['resources/**'],
+                    dest: 'dist/'
+                }]
+            },
+            wiki: {
+                files: [{
+                    expand: true,
+                    src: ['wiki/**'],
+                    dest: 'dist/'
+                }]
+            },
+            htmlfiles: {
+                files: [{
+                    expand: true,
+                    src: ['*.html', "*.css"],
+                    dest: 'dist/',
+                    filter: 'isFile'
+                }],
+                options: {
+                    process: function(content, srcpath) {
+                        var res = content.replace(/bower_components\/(.*)\/dist/g, "lib/\$1");
+                        res = res.replace(/bower_components\/magic/g, "lib/magic");
+                        return res;
+                    }
+                }
+            }
+        },
 
 
-	    watch: {
-            files: ['**/*.html',"**/*.md","**/*.css","!dist/**"],
+        watch: {
+            files: ['**/*.html', "**/*.md", "**/*.css", "!dist/**"],
             tasks: ["copyfiles"]
         },
 
@@ -72,7 +91,7 @@ module.exports = function(grunt) {
 
     // Default task(s).
     grunt.registerTask('copyfiles', ['copy:main', 'copy:htmlfiles', "copy:resources", "copy:wiki"]);
-    grunt.registerTask('default', ['copyfiles','connect', 'open', "watch"]);
+    grunt.registerTask('default', ['copyfiles', 'connect', 'open', "watch"]);
 
 
 };

@@ -1,29 +1,29 @@
 {
-  "name": "Barrel Organ Discovery WebSite",
-  "version": "0.0.0",
-  "authors": [
-    "Patrice Freydiere <frett27@gmail.com>"
-  ],
-  "description": "Site web barrel organ discovery",
-  "moduleType": [
-    "amd"
-  ],
-  "license": "MIT",
-  "homepage": "http://www.barrel-organ-discovery.org",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "devDependencies": {
-    "bootstrap": "~3.2.0"
-  },
-  "dependencies": {
-    "bootstrap": "~3.2.0",
-    "jquery": "~2.1.1",
-    "magic": "~1.0.0"
-  }
+    "name": "Barrel Organ Discovery WebSite",
+    "version": "0.0.0",
+    "authors": [
+        "Patrice Freydiere <frett27@gmail.com>"
+    ],
+    "description": "Site web barrel organ discovery",
+    "moduleType": [
+        "amd"
+    ],
+    "license": "MIT",
+    "homepage": "http://www.barrel-organ-discovery.org",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "devDependencies": {
+        "bootstrap": "~3.2.0"
+    },
+    "dependencies": {
+        "bootstrap": "~3.2.0",
+        "jquery": "~2.1.1",
+        "magic": "~1.0.0"
+    }
 }
