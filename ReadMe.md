@@ -7,18 +7,13 @@ Bootstrap et MDWiki pour les articles techniques.
 
 #Prerequis
 
-NodeJS / NPM
-
-Bower
+Java
 
 
 #Setup
 
-construire le site web
+construire le site web, vous devez avoir java sur votre plateforme. (NodeJS / NPM / Grunt sont installés directement)
 
-	npm install
+	gradlew buidsite
 
-	bower update
-
-	grunt
-
+	

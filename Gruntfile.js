@@ -92,6 +92,7 @@ module.exports = function(grunt) {
     // Default task(s).
     grunt.registerTask('copyfiles', ['copy:main', 'copy:htmlfiles', "copy:resources", "copy:wiki"]);
     grunt.registerTask('default', ['copyfiles', 'connect', 'open', "watch"]);
+    grunt.registerTask('build', ['copyfiles']);
 
 
 };
