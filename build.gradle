@@ -53,7 +53,7 @@ node {
     download = true
 }
 
-task buildsite(dependsOn:[npmInstall, installGrunt, grunt_build]) {
+task buildsite(dependsOn:grunt_build) {
 
 }
 
@@ -61,4 +61,9 @@ task refresh(dependsOn:grunt_build) {
 
 }
 
+// makes sure on each build that grunt is installed
+grunt_build.dependsOn 'installGrunt'
+
+// processes your package.json before running grunt build
+grunt_build.dependsOn 'npmInstall'
 

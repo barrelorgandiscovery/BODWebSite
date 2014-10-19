@@ -14,7 +14,11 @@ module.exports = function(grunt) {
                 }
             }
         },
-
+	bower: {
+	    install: {
+	       //just run 'grunt bower:install' and you'll see files from your Bower packages in lib directory
+	    }
+	},
         copy: {
             main: {
                 files: [
@@ -88,11 +92,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-open');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-bower-task');
 
     // Default task(s).
     grunt.registerTask('copyfiles', ['copy:main', 'copy:htmlfiles', "copy:resources", "copy:wiki"]);
-    grunt.registerTask('default', ['copyfiles', 'connect', 'open', "watch"]);
-    grunt.registerTask('build', ['copyfiles']);
+    grunt.registerTask('default', ['bower:install','copyfiles', 'connect', 'open', "watch"]);
+    grunt.registerTask('build', ['bower:install','copyfiles']);
 
 
 };
