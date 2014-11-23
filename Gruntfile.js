@@ -75,7 +75,7 @@ module.exports = function(grunt) {
 
 
         watch: {
-            files: ['**/*.html', "**/*.md", "**/*.css", "!dist/**"],
+            files: ['**/*.html', "**/*.md", "**/*.css", "wiki/**/*.*", "!dist/**"],
             tasks: ["copyfiles"]
         },
 
