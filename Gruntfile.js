@@ -59,7 +59,7 @@ module.exports = function(grunt) {
             htmlfiles: {
                 files: [{
                     expand: true,
-                    src: ['*.html', "*.css"],
+                    src: ['*.html', "*.css","*.png"],
                     dest: 'dist/',
                     filter: 'isFile'
                 }],
