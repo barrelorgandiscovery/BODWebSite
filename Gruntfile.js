@@ -68,7 +68,8 @@ module.exports = function(grunt) {
                         var res = content.replace(/bower_components\/(.*)\/dist/g, "lib/\$1");
                         res = res.replace(/bower_components\/magic/g, "lib/magic");
                         return res;
-                    }
+                    },
+		    noProcess: '**/*.{png,gif,jpg,jpeg,ico,psd}' // Since the property was renamed
                 }
             }
         },
