@@ -14,6 +14,6 @@ Java
 
 construire le site web, vous devez avoir java sur votre plateforme. (NodeJS / NPM / Grunt sont installés directement)
 
-	gradlew buidsite
+	gradlew buildsite
 
 	
