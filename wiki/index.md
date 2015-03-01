@@ -8,9 +8,16 @@
 
 ##APrint Studio
 
+[Nouveautés APrint Studio 2015](articles/Nouvelles_Versions/2015/Whats_new_APrintStudio_2015.md)
+
 ###Enregistrement
 
 [Notes sur l'enregistrement sonore d'un instrument](articles/CreationInstrument.md) 
+
+###Montage de cartons
+
+[Note sur le montage d'un carton, nouveau outils de la version 2015](articles/Montage_Cartons/Montage_Cartons.md)
+
 
 ###Disques Aristons
 
