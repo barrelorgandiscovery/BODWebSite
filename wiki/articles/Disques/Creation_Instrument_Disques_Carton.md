@@ -6,7 +6,7 @@ APrint Studio peut être utilisé pour la construction de carton perforés type 
 Ces différences sont utilisées par l'outil d'export de disque en DXF.
 
 
-![](DSCN2604.jpg)
+<img src="DSCN2604.jpg" width=400 />
 
 
 #Installation du script d'export en DXF des disques
@@ -22,7 +22,7 @@ L'installation est terminée,
 
 vous avez alors dans la vision carton, un quick script __DXF Disque__ créant le fichier DXF associé au carton
 
-![](execution.png)
+<img src="execution.png" width=400 />
 
 
 Le fichier resultat est placé dans le répertoire affiché dans la console
@@ -38,7 +38,7 @@ Le fichier resultat est placé dans le répertoire affiché dans la console
 
 La gamme est décrite dans aprint studio par rapport au centre du disque. La référence est alors indiquée en bas, comme ci dessous.
 
-![](position.jpg)
+<img src="position.jpg" width=400 />
 
 Ainsi : 
 
@@ -49,14 +49,14 @@ Les autres paramètres restent valables (axe de la 1ere piste, entre piste, larg
 
 dans l'éditeur de gamme, ceci se présente ainsi :
 
-![](imagegamme.png)
+<img src="imagegamme.png" width=400 />
 
 ## Autres paramètres associés à la gamme
 
 D'autres paramètres doivent être indiqués dans la gamme pour pouvoir générer l'image DXF du disque. Les gammes peuvent mémoriser des paramètres supplémentaires pouvant être exploitées par des outils spécifiques. 
 On indique ici les paramètres supplémentaires
 
-![](parametresetendus.png)
+<img src="parametresetendus.png" width=400 />
 
 ###Parametre central\_hole\_size
 
@@ -70,7 +70,7 @@ ce paramètre indique le **rayon des trous d'entrainement**
 
 ce paramètre indique la distance au centre des trous d'entraitement
 
-![](parametres.png)
+<img src="parametres.png" width=400 />
 
 
 #Programme associé

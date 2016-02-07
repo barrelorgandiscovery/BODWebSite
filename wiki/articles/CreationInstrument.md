@@ -5,7 +5,9 @@
 
 #Notes sur l'enregistrement d'instruments dans le logiciel
 
-Novembre 2011
+__Novembre 2011__
+
+<img src="microphone.jpg"/>
 
 ##Introduction
 

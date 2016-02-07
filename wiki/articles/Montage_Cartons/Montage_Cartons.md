@@ -14,13 +14,13 @@ une nouvelle barre d'outil affichable dans la vue carton permet de travailler av
 
 ces outils travaillent avec un calque de "marqueurs", permettant l'affichage.
 
-![](calques.png)
+<img src="calques.png" width=400/>
 
 ##Créer une marque
 
 La création d'une marque est réalisée avec l'outil "Nouveau marqueur", en clickant cet outil et en sélectionnant un endroit sur le carton, il est possible de créer une marque de sébut de section.
 
-![](creation_marqueur.png)
+<img src="creation_marqueur.png" width=400 />
 
 le marqueur apparait dans une fenetre située sur la droite, donnant une vision des différentes marques posées.
 
@@ -37,7 +37,7 @@ L'outil **"Supprimer marqueur"** permet d'effacer la marque, en le sélectionnan
 
 Il est parfois intéressant de pouvoir avancer ou reculer des trous sur le carton. L'outil **Ajuster le carton** permet par un glissé déposé sur le carton d'avancer ou de reculer TOUS LES TROUS SITUES après le click souris.
 
-![](ajuster.png)
+<img src="ajuster.png" width=400 />
 
 
 
@@ -49,7 +49,7 @@ Une fenetre située sur la droite de la fenetre d'édition donne la possibilité
 
 Il est possible alors de dupliquer une section, déplacer une section ou supprimer une section.
 
-![](sections.png)
+<img src="sections.png" width=400 />
 
 Ces actions sont réalisée en sélectionant la section dans la fenetre, puis en effectuant un glissé déposé. **Les actions sont modifiées par la touche CTRL** qui propose la duplication en lieu et place du déplacement.
 

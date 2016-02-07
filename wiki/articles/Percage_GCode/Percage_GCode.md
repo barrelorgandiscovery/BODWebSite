@@ -1,7 +1,7 @@
 #Pilotage du percage de cartons en utilisant les GCodes (Arduino + GRBL) 
 
 
-Cette année 2015, Jean Pierre Rosset a réalisé une perforatrice automatique pour carton, en utilisant le meilleure de la technologie actuelle. Fort des projets Open Source Existants, le lien entre la machine outil et l'ordinateur se trouve grandement simplifié, améliorant de fait la fiabilité du pilotage.
+Cette année 2015 - 2016, Jean Pierre Rosset a réalisé une perforatrice automatique pour carton, en utilisant le meilleure de la technologie actuelle. Fort des projets Open Source Existants, le lien entre la machine outil et l'ordinateur se trouve grandement simplifié, améliorant de fait la fiabilité du pilotage.
 
 ![](perfo_35r.jpg)
 
@@ -17,15 +17,14 @@ _Principes de la machine :_
 La machine est autonome en fonctionnement, l'ordinateur envoie des commandes de déplacement, et de perçage en utilisant une liaison série. Donc plus de perte de pas, et une adaptation simple aux machines existantes. En effet, le paramétrage de l'arduino, permet de positionner une référence, et un certains nombre de paramètres relatifs à la machine. 
 L'ordinateur n'a alors plus besoin de connaitre les détails de construction, et de pilotage, en envoyant des commandes génériques comme une machine à commande numérique.
 
-Le projet open ource GRBL conçu pour Arduino, implémente un certain nombre de fonctionnalités :
+Le projet open source GRBL conçu pour Arduino, implémente un certain nombre de fonctionnalités :
 
 - Gestion des types de commandes
 - Gestion des accélérations, déplacements
 - Gestion des références (homing)
 
 
-[Références des pièces utilisées pour la construction de la machine](PIECES _POUR_CONSTRUCTION_PERFORATRICE.pdf)
-
+[Références des pièces utilisées pour la construction de la machine](PIECES_POUR_CONSTRUCTION_PERFORATRICE.pdf) 
 
 ##Logiciel spécialisé pour les machines CNC à perforation de carton
 
@@ -34,6 +33,7 @@ Dans le cadre du projet, le logiciel GRBL a été modifié pour les machines à 
 - mise en place d'un détecteur pour les état poinçons haut et bas
 - Nouvelle commande GCODE M100, permettant de déclencher un coup de poinçon 
 
+le projet dérivé de GRBL - GRBLPunch est disponible et TELECHARGEABLE à cette adresse : [https://github.com/frett27/grblPunch](https://github.com/frett27/grblPunch)
 
 ##Mise en place de la partie logicielle de commande par l'arduino
 

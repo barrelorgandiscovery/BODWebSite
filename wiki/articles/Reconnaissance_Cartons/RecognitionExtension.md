@@ -24,11 +24,11 @@ Il est possible de créer au final, une sortie vectorielle pour impression ou d�
 
 *Exemple de photographie utilisée pour une reconnaissance de disque :*
 
-![](disque.png)
+<img src="disque.png" width=400 />
 
 *Resultat obtenu dans la vue carton du logiciel APrint Studio :*
 
-![](result.png) 
+<img src="result.png" width=400 /> 
 
 ##Démarche
 
@@ -51,7 +51,7 @@ Cette étape permet aau logiciel de localiser le centre du disque. La bonne conn
 
 Le point important de cette étape est la connaissance du centre du disque, des outils permettent alors de prendre une serie de points sur une ellipse (qui peut être le trou de centrage ou une gravure sur le carton). Les points saisis permettent de calculer le centre d'une ellipse. Un minimum de 5 points est attendu, mais il est possible pour avoir plus de précision d'en saisir plus.
 
-![](step2.png)
+<img src="step2.png" width=400 />
 
 
 ###Définition du contour du disque
@@ -59,13 +59,13 @@ Le point important de cette étape est la connaissance du centre du disque, des 
 La seconde étape de l'assistant demande à préciser le contour du disque. Ceci est réalisé de la même façon que l'étape précédente, c'est à dire en saisissant une serie de points sur le contour du disque.
 Il se peut que la photo soit déformée et ne permette pas directement de pouvoir correctement lire les trous (mal qualifiés). La connaissance du contour permet ainsi de mieux prendre en compte les déformations et redresser au mieux la photo pour la mettre à plat.
 
-![](step3.png)
+<img src="step3.png" width=400 />
 
 ###Définition du début du disque
 
 Cette nouvelle étape demande à définir le debut du carton (emplacement où le disque commence sa lecture). La saisie d'un seul point est nécessaire sur le contour, comme indiqué sur la photo en jaune.
 
-![](step4.png)
+<img src="step4.png" width=400 />
 
 
 ###Numérisation du disque
@@ -78,7 +78,7 @@ On retrouve ici dans l'écran, l'ensemble des outils principaux de manipulation 
 
 L'étape peut etre réalisée manuellement, ou vous pouvez utiliser un bouton de reconnaissance automatique, utilisant un algorithme qui donne de bons resultats pour une première reconnaissance. La reconnaissance automatique peut être complétée par une série d'étapes manuelles avec les outils si certains trous ont été manqués ou doivent être complétés, ou même réduits (car trop grands).
 
-![](laststep.png)
+<img src="laststep.png" width=400 />
 
 
 
@@ -88,5 +88,5 @@ La fin de l'assistant importe dans APrint Studio le contenu du disque dans une f
 
 _le resultat obtenu:_
 
-![](result.png)
+<img src="result.png" width=400 />
 
