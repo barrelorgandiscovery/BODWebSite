@@ -1,9 +1,10 @@
 #Pilotage du percage de cartons en utilisant les GCodes (Arduino + GRBL) 
 
-*2015 - 2016* - Article rédigé par Patrice Freydiere et Jean Pierre Rosset
+*Juin 2016* - Mise à jour des photos, Ajout d'une documentation de Jean Pierre sur la partie Electronique et Electrique.
 
-*Janvier 2016* - Ajout d'élément de Freddy sur l'apprentissage de la configuration GRBL par Freddy.
+*Janvier 2016* - Ajout d'élément sur l'apprentissage de la configuration GRBL par Freddy.
 
+*2015 - 2016* - Article rédigé par Patrice Freydiere, Jean Pierre Rosset
 
 
 ##Introduction 
@@ -11,7 +12,8 @@
 
 Cette année 2015 - 2016, Jean Pierre Rosset a réalisé une perforatrice automatique pour carton, en utilisant le meilleure de la technologie actuelle. Fort des projets Open Source Existants, le lien entre la machine outil et l'ordinateur se trouve grandement simplifié, améliorant de fait la fiabilité du pilotage.
 
-![](perfo_35r.jpg)
+
+![](perfo_5.jpg)
 
 Dans les grandes ligne, sa machine , autonome, utilise un arduino pour la gestion des déplacements et problematiques electronique, laissant alors soin à un pilotage CNC utilisant les GCODE. 
 
@@ -36,18 +38,18 @@ Le projet open source GRBL conçu pour Arduino, implémente un certain nombre de
 
 ##Logiciel spécialisé pour les machines CNC à perforation de carton
 
-Dans le cadre du projet, le logiciel GRBL a été modifié pour les machines à perforation, plusieures modifications ont été mise en place :
+Dans le cadre du projet, le logiciel GRBL a été modifié pour les machines à perforation, plusieurs modifications ont été mises en place :
 
-- mise en place d'un détecteur pour les état poinçons haut et bas
+- Mise en place de deux détecteurs pour les états "poinçon haut et poinçon bas"
 - Nouvelle commande GCODE M100, permettant de déclencher un coup de poinçon 
 
 le projet dérivé de GRBL - GRBLPunch est disponible et TELECHARGEABLE à cette adresse : [https://github.com/frett27/grblPunch](https://github.com/frett27/grblPunch)
 
 ##Mise en place de la partie logicielle de commande par l'arduino
 
-La mise en place passe par plusieures étapes, 
+La mise en place passe par plusieurs étapes, 
 
-1 - récupérer le fichier grblpunch.hex dans le projet : [Fichier grblpunch.hex](https://github.com/frett27/grblPunch)
+1 - Récupérer le fichier grblpunch.hex dans le projet : [Fichier grblpunch.hex](https://github.com/frett27/grblPunch)
 
 2 - Utilisez le logiciel [XLoader](XLoader.zip) pour charger le fichier dans l'arduino
 
@@ -75,7 +77,7 @@ le paramétrage des commandes suit ces indications : [https://github.com/grbl/gr
 
 dans notre cas, nous avons paramétré le système en utilisant ces résultat: (resultat de la commande $$)
 
-[Parametres complets de Jean Pierre utilisé en production](Paramétres_KRUNCH_fév-2016.pdf)
+[Parametres complets de Jean Pierre utilisé en production](Params_15_02_2016.pdf)
 
 
 #Et le carton alors ???
