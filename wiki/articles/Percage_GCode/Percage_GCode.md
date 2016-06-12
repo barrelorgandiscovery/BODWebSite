@@ -36,6 +36,15 @@ Le projet open source GRBL conçu pour Arduino, implémente un certain nombre de
 
 [Références des pièces utilisées pour la construction de la machine](PIECES_POUR_CONSTRUCTION_PERFORATRICE.pdf) 
 
+
+Indication sur le cablage électrique de la machine de Jean Pierre :
+
+[Cablage de la Partie Electronique et Electrique de la machine](Partie_electrique.pdf)
+
+
+Vous pouvez contacter les auteurs (Jean Pierre et Freddy) pour avoir des informations plus techniques sur la construction. Beaucoup d'éléments techniques ont été postés sur le forum  [http://orguedebarbarie.vraiforum.com/f7-Les-poinconneuses.htm](http://orguedebarbarie.vraiforum.com/f7-Les-poinconneuses.htm)
+
+
 ##Logiciel spécialisé pour les machines CNC à perforation de carton
 
 Dans le cadre du projet, le logiciel GRBL a été modifié pour les machines à perforation, plusieurs modifications ont été mises en place :
@@ -49,9 +58,9 @@ le projet dérivé de GRBL - GRBLPunch est disponible et TELECHARGEABLE à cette
 
 La mise en place passe par plusieurs étapes, 
 
-1 - Récupérer le fichier grblpunch.hex dans le projet : [Fichier grblpunch.hex](https://github.com/frett27/grblPunch)
+1 - Récupérer le fichier `grblpunch.hex` dans le projet : [Fichier grblpunch.hex](https://github.com/frett27/grblPunch)
 
-2 - Utilisez le logiciel [XLoader](XLoader.zip) pour charger le fichier dans l'arduino
+2 - Utiliser le logiciel [XLoader](XLoader.zip) pour charger le fichier dans l'arduino
 
 ![xloader.PNG](xloader.PNG)
 
@@ -63,78 +72,27 @@ Une fois le chargement du programme réalisé, l'outil UniversalGCodeSender, per
 
 ![](UGCODESender.PNG)
 
-les commandes peuvent être lancées depuis la boite commande, 
+les commandes peuvent être lancées depuis la boite "commande", 
 
 le paramétrage des commandes suit ces indications : [https://github.com/grbl/grbl/wiki/Configuring-Grbl-v0.9](https://github.com/grbl/grbl/wiki/Configuring-Grbl-v0.9)
 
-**Note** : Freddy réalisé une traduction de l'ensemble des paramètres,
+**Note** : Freddy a réalisé une traduction de l'ensemble des paramètres,
  
-<a href="PARAMÈTRES DU GRBL_JPR_Freddy.pdf">
+<a href="PARAMÈTRES DU GRBL_JPR_Freddy.pdf" title="Cliquez pour accéder à la documentation">
 ![Parametrage GRBL](ManuelParametres.PNG)
 </a>
 
 
 
-dans notre cas, nous avons paramétré le système en utilisant ces résultat: (resultat de la commande $$)
+dans notre cas, nous avons paramétré le système en utilisant ces résultats: (résultat de la commande $$)
 
-[Parametres complets de Jean Pierre utilisé en production](Params_15_02_2016.pdf)
+[Parametres complets de Jean Pierre utilisés en production](Params_15_02_2016.pdf)
 
 
 #Et le carton alors ???
 
-APrint nous permet dans une 1ere étape la génération d'un fichier GCode, pouvant être envoyé sur la machine pour perçage. le script suivant, pouvant être adapté permet l'export des commandes de perforation dans un fichier GCode.
+APrint 2016, intègre une nouvelle fenêtre de création du plan de perçage et génère un fichier GCODE, qui peut être utilisé directement en perçage.
 
-	
-	
-	import org.barrelorgandiscovery.gui.atrace.*
-	import org.barrelorgandiscovery.gui.aedit.*
-	import java.awt.*
-	import java.awt.geom.* // point2D
-	
-	def pconverter = new PunchConverter(virtualbook.scale, 3.2, 2) // poincon de 3mm par 3mm
-	
-	def punchConvertionResult = pconverter.convert(virtualbook.holesCopy)
-	// punch convertionResult contient les erreur et la liste des coups de poincons Ã  donner (avec Ã©ventuellement un recouvrement)
-	
-	
-	
-	println punchConvertionResult.holeerrors
-	
-	def punches = punchConvertionResult.result
-	
-	// pour chaque coup de poincons, on ecrit les ordres pour la machine
-	
-	c = 0
-	punches.each {
-	   println "N${c++} G90 X${it.y-1.0} Y${it.x}"
-	   println "M100"
-	}
-	
-	// visualisation sur le carton des coups de poinÃ§ons
-	
-	// crÃ©ation d'un calque pour visionner le resultat
-	def g = new GraphicsLayer("poincon")
-	g.setStroke(new BasicStroke(0.4f));
-	
-	// on recupere la gamme de l'instrument
-	def scale = virtualbook.scale
-	
-	// on enleve des graphiques du calque si necessaire, lorsqu'on lance plusieurs fois le script
-	g.clear()
-	
-	// on ajoute les coup de poinÃ§on au calque pour les visualiser
-	// les coordonnes du coup de poincon sont au centre du poincon, il faut prendre en charge
-	// le referentiel de position
-	
-	// scale.trackwidth est la largeur de la piste (en y)
-	
-	punches.each {
-	    g.add(new Rectangle2D.Double(it.x - 2.0,it.y - scale.trackWidth / 2.0, 4.0, scale.trackWidth))
-	}
-	
-	// on ajoute le calque
-	pianoroll.addOrReplaceLayer(g)
-	// on rafraichit la fenetre
-	pianoroll.repaint()
+ 
 
 
