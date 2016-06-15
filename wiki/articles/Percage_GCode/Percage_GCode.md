@@ -34,7 +34,7 @@ Le projet open source GRBL conçu pour Arduino, implémente un certain nombre de
 - Gestion des références (homing)
 
 
-[Références des pièces utilisées pour la construction de la machine](PIECES_POUR_CONSTRUCTION_PERFORATRICE.pdf) 
+[Références des pièces utilisées pour la construction de la machine](PIECES_CONSTRUCTION_PERFORATRICE.pdf) 
 
 
 Indication sur le cablage électrique de la machine de Jean Pierre :
@@ -76,7 +76,7 @@ les commandes peuvent être lancées depuis la boite "commande",
 
 le paramétrage des commandes suit ces indications : [https://github.com/grbl/grbl/wiki/Configuring-Grbl-v0.9](https://github.com/grbl/grbl/wiki/Configuring-Grbl-v0.9)
 
-**Note** : Freddy a réalisé une traduction de l'ensemble des paramètres,
+**Note** : Freddy a réalisé une traduction de l'ensemble des paramètres, (cliquez sur le document pour l'ouvrir)
  
 <a href="PARAMÈTRES DU GRBL_JPR_Freddy.pdf" title="Cliquez pour accéder à la documentation">
 ![Parametrage GRBL](ManuelParametres.PNG)
