@@ -108,8 +108,8 @@ $(function(){
 
         <div class="lead">
 
-            <p>Depuis 2015, Jean Pierre Rosset, puis Freddy Meyer ont construit des perforatrices nouvelle génération
-            en utilisant le meilleure de la technologie actuelle. Fort des projets Open Source Existants, le lien entre la machine outil et l'ordinateur se trouve grandement simplifié, améliorant de fait la fiabilité du pilotage
+            <p>Depuis 2015, Jean Pierre Rosset puis Freddy Meyer ont construit des perforatrices nouvelle génération
+            en utilisant le meilleur de la technologie actuelle. Fort des projets Open Source existants, le lien entre la machine outil et l'ordinateur se trouve grandement simplifié, améliorant de fait la fiabilité du pilotage
             
             <p>
 
@@ -142,7 +142,7 @@ $(function(){
                      <source src="krunch/20160716_143536.mp4" type="video/mp4">
               
               </video>
-                <div class="caption">Jean Pierre fait une demonstration de sa perforatrice aux gets 2016</div>
+                <div class="caption">Jean Pierre fait une démonstration de sa perforatrice aux gets 2016</div>
 </div>
 
                 </div>
@@ -227,11 +227,11 @@ $(function(){
 <h3>Principe des machines</h3>
 
 <p>
-La machine est autonome en fonctionnement, l'ordinateur envoie des commandes de déplacement, et de perçage en utilisant une liaison série. Donc plus de perte de pas, et une adaptation simple aux machines existantes. En effet, le paramétrage de l'arduino, permet de positionner une référence, et un certains nombre de paramètres relatifs à la machine.
-L'ordinateur n'a alors plus besoin de connaitre les détails de construction, et de pilotage, en envoyant des commandes génériques comme une machine à commande numérique.
+La machine est autonome en fonctionnement, l'ordinateur envoie des commandes de déplacement et de perçage en utilisant une liaison série. Donc plus de pertes de pas et une adaptation simple aux machines existantes. En effet, le paramétrage de l'arduino permet de positionner une référence, et un certain nombres de paramètres relatifs à la machine.
+L'ordinateur n'a alors plus besoin de connaitre les détails de construction et de pilotage, en envoyant des commandes génériques comme une machine à commande numérique.
 </p>
 <p>
-Le projet open source GRBL conçu pour Arduino, implémente un certain nombre de fonctionnalités :
+Le projet open source GRBL conçu pour Arduino implémente un certain nombre de fonctionnalités :
 </p>
 <ul>
 <li>Gestion des types de commandes</li>
@@ -239,9 +239,9 @@ Le projet open source GRBL conçu pour Arduino, implémente un certain nombre de
 <li>Gestion des références (homing)</li>
 </ul>
 
-<p>Pour le projet, GRBL a été améliorer pour introduire une nouvelle commande "M100" pilotant un coup de poinçon.</p>
+<p>Pour le projet, GRBL a été amélioré pour introduire une nouvelle commande "M100" pilotant les coups de poinçon.</p>
 
-<p>Bien que le pilotage de la machine puisse se faire en toute indépendance de la partie logicielle, une intégration a été pensée , puis mise en place dans la nouvelle version d'APrint Studio</p>
+<p>Bien que le pilotage de la machine puisse se faire en toute indépendance de la partie logicielle, une intégration a été pensée puis mise en place dans la nouvelle version d'APrint Studio</p>
 
 
 <div class="thumbnail">
@@ -254,27 +254,27 @@ Le projet open source GRBL conçu pour Arduino, implémente un certain nombre de
 
 
 
-<p>La commande de la machine est effectuée par des ordres de commande numérique. La norme GCode est utilisée, pour pouvoir bénéficier des outils existants (logiciels).</p>
+<p>La commande de la machine est effectuée par des ordres de commande numérique. La norme GCode est utilisée pour pouvoir bénéficier des outils existants (logiciels).</p>
 
-<p>Vous trouverez <a target="presentationGcode" href="https://fr.wikipedia.org/wiki/Programmation_de_commande_num%C3%A9rique" >ici un lien de description de ce language</a>.</p>
+<p>Vous trouverez <a target="presentationGcode" href="https://fr.wikipedia.org/wiki/Programmation_de_commande_num%C3%A9rique" >ici un lien de description de ce langage</a>.</p>
 
 
 
 
    <h3>Le pilotage à partir d'APrint Studio</h3>
 
-<p>Dans sa version 2016, une extension permet la transformation d'un fichier midi en fichier GCode. Lors de la construction du plan de perçage, l'interaction avec le carton est toujours possible, permettant d'agrandir certains trous, ou corriger des motifs de perçages problematiques pour la robustesse.</p>
+<p>Dans sa version 2016, une extension permet la transformation d'un fichier midi en fichier GCode. Lors de la construction du plan de perçage, l'interaction avec le carton est toujours possible, permettant d'agrandir certains trous ou corriger des motifs de perçages problématiques pour la robustesse.</p>
 
 <p>La planification du perçage propose plusieurs stratégies :</p>
 <ul>
-<li>Stratégie de perçage vertical (Sans retour arrière), utilisé pour le pneumatique par exemple</li>
-<li>Stratégie de perçage avec optimisation des déplacements (réduction des déplacement de la machine)</li>
+<li>Stratégie de perçage vertical (sans retours), utilisé pour le papier par exemple</li>
+<li>Stratégie de perçage avec optimisation des déplacements (réduction des déplacements de la machine)</li>
 </ul>
 
-<p>Le perçage pneumatique avec la création de pont est également possible.</p>
+<p>Le perçage pneumatique avec la création de ponts est également possible.</p>
 
 
-<p>Dans les derniers développements, un <em>pilotage directe de la machine</em> a été mis en place pour permettre le suivit, les réglages potentiels, ainsi que <em>la reprise d'un percage arrêté</em></p>
+<p>Dans les derniers développements, un <em>pilotage direct de la machine</em> a été mis en place pour permettre le suivi, les réglages potentiels ainsi que <em>la reprise d'un percage arrêté</em></p>
 
 
      <div class="row">
@@ -297,7 +297,7 @@ Le projet open source GRBL conçu pour Arduino, implémente un certain nombre de
                     <div class="thumbnail">
 
                        <img src="krunch/SS02.png" height="300"></img>
-                    <div class="caption">Construction du plan de perçage, avec modifications possibles sur le carton (pour corriger les problemes)</div>
+                    <div class="caption">Construction du plan de perçage, avec modifications possibles sur le carton (pour corriger les problèmes)</div>
 
                     </div>
 			    </div>
@@ -305,7 +305,7 @@ Le projet open source GRBL conçu pour Arduino, implémente un certain nombre de
                     <div class="thumbnail">
 
                        <img src="krunch/SS03.png" height="300"></img>
-  <div class="caption">Synthèse du plan de perçage avec choix d'enregistrement dans un fichier, ou perçage.</div>
+  <div class="caption">Synthèse du plan de perçage avec choix d'enregistrement dans un fichier ou perçage.</div>
 
 
                     </div>
@@ -330,7 +330,7 @@ Le projet open source GRBL conçu pour Arduino, implémente un certain nombre de
 <h3>Informations techniques</h3>
 
 
-<p>Nous avons regrouppé ici, un ensemble de documentation vous permettant de pouvoir analyser l'existant, vous donner des idées pour une construction partielle (partie électronique par exemple), ou même vous construire votre propre machine</p>
+<p>Nous avons regroupé ici un ensemble de documentations vous permettant de pouvoir analyser l'existant, vous donner des idées pour une construction partielle (partie électronique par exemple) ou même vous construire votre propre machine.</p>
 
 
 	<div class="panel panel-primary">
