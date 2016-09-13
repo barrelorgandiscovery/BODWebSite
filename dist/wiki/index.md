@@ -27,5 +27,5 @@
 
 ###Percage en utilisant les GCODE
 
-* [Pilotage du perçage avec une perforatrice utilisant GRBL Punch](articles/Percage_GCode/Percage_GCode.md)
+* [Pilotage du perçage avec une perforatrice utilisant GRBL Punch](articles/Articles_Perforatrice/index_documents.md)
 
