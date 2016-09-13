@@ -25,7 +25,9 @@
 * [Creation d'instrument et de disques cartons en DXF](articles/Disques/Creation_Instrument_Disques_Carton.md)
 * [Reconnaissance automatique de disques cartons à partir d'une photo](articles/Reconnaissance_Cartons/RecognitionExtension.md)
 
-###Percage en utilisant les GCODE
+###Perforatrices GRBL / Mécanique / Electronique
+
+Ensemble d'articles sur la mise en place, construction et pilotage d'une machine à perforer les cartons.
 
 * [Pilotage du perçage avec une perforatrice utilisant GRBL Punch](articles/Articles_Perforatrice/index_documents.md)
 
