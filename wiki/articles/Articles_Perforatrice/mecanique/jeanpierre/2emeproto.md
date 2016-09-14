@@ -4,7 +4,7 @@
 Jean Pierre Rosset - 2016
 
 
-Sur cette rubrique, je vais présenter mon 2ème prototype. Il a une course légèrement augmentée et équipé d'une fourche différente et munie d'un poinçon carré.
+Dans cette rubrique, je vais présenter mon 2ème prototype. Il a une course légèrement augmentée et équipé d'une fourche différente et munie d'un poinçon carré.
 Je vais successivement amener les images au fur et à mesure de sa construction.
 
 ##Structure
@@ -51,7 +51,7 @@ Depuis cette référence, une commande simple (offset) paramétrée une fois pou
 
 
 la matrice est réalisée dans un morceau d'acier HSS.
-Il l'usine par électro-érosion. Le fil fait à peu près 0,2 mm de diamètre et pour ne pas avoir d'arrondi dans les coins, il avance le fil un petit peu dans l'angle pour supprimer l'arrondi.
+c'est usiné par électro-érosion. Le fil fait à peu près 0,2 mm de diamètre et pour ne pas avoir d'arrondi dans les coins, le fil rentre un petit peu dans l'angle pour supprimer l'arrondi.
 Pour le poinçon, j'ai acheté chez RC-machines des barreaux en HSS et de 3x3 mm de section.
 
 ![](p14.jpg)
@@ -68,7 +68,7 @@ Avec le chemin du carton
 
 ![](p19.jpg)
 
-Voici les images avec le câblage et sur la fourche les deux renforts conseillés par Loïc :
+Voici les images avec le câblage et sur la fourche les deux renforts :
 
 ![](p20.jpg)
 
@@ -87,9 +87,9 @@ Le récipient est glissé sous la fourche et est aussi maintenu par un aimant.
 ##Performances de la machine
 
 
-**10 aout 2016** : Voici les informations de perforation :
+**10 août 2016** : Voici les informations de perforation :
 
-3,2 mètres de carton perforé en 15 minutes 34 secondes et 7498 trous.
+3,2 mètres de carton perforés en 15 minutes 34 secondes et 7498 trous.
 
 donc 934 secondes / 7498 = 0,1245 s par trou
 
