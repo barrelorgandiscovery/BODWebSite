@@ -17,6 +17,6 @@ Vous trouverez ici, l'ensemble des documents consolidés de la construction de m
 [Article sur l'utilisation d'APrint Studio pour la perforation](logiciel/utilisation_perforatrice.md)
 
 
-##Details techniques
+##Elements techniques
 
-[Performances de la machine, paramétrage](miseaupoint/mesures.md)
+[Mesure de performances de la machine, paramétrage](miseaupoint/mesures.md)
