@@ -10,7 +10,7 @@ Vous trouverez ici, l'ensemble des documents consolidés de la construction de m
 
 ##Parametrage
 
-[Article sur le Parametrage Logiciel pour la machine](logiciel/parametrage_machine.md)
+[Article sur le Paramétrage Logiciel pour la machine](logiciel/parametrage_machine.md)
 
 ##Utilisation
 

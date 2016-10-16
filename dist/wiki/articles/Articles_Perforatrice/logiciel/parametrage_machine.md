@@ -2,8 +2,6 @@
 
 par Freddy Meyer
 
-
-
 Je suppose que votre machine est construite selon les indications que vous trouverez à l’adresse : (schémas et platines électroniques) et il faut maintenant passer au plus intéressant…la faire fonctionner !
 Pour ce faire, il vous faudra quelques programmes :
 Selon la provenance de votre carte Arduino, il est possible que votre pc ne la reconnaisse pas. Il faudra juste installer un petit programme driver :

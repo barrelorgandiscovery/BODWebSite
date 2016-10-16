@@ -4,7 +4,7 @@
 ## <img src="info.jpg" width=50 />Presentation
 
 * [Article de présentation APrint Studio](2014_Presentation_APrint_Studio/Presentation.md)
-
+* [Nouveautés APrint Studio 2016](articles/Nouvelles_Versions/2016/Whats_new_APrintStudio_2016.md)
 * [Nouveautés APrint Studio 2015](articles/Nouvelles_Versions/2015/Whats_new_APrintStudio_2015.md)
 
 ---
