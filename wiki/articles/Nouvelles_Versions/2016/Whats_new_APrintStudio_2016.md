@@ -62,7 +62,7 @@ La proposition d'instruments peut également être proposée avec une approche h
 
 ## Perforation de cartons 
 
-Cette fonctionnalité , installée à la demande dans la version 2016, permet de préparer la perforation de carton en prévisualisant le chemin de perforation et les trous à perforer.
+Cette fonctionnalité , installée à la demande dans la version 2016, permet de préparer la perforation de cartons en prévisualisant le chemin de perforation et les trous à perforer.
 
 La stratégie de perçage peut être choisie, paramétrée et affichée. APrint Studio permet alors dans ces phases de modifier le carton de façon interactive pour ajuster les problèmes de perçage.
 
