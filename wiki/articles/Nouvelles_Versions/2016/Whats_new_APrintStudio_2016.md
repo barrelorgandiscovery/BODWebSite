@@ -4,9 +4,13 @@
 
 ##Introduction
 
-Cette Version majeure 2016 introduit les fonctionnalités et développements réalisés cette acnnée 2016 ainsi que des évolutions de développement initiés en 2015.
+Cette Version majeure 2016 introduit les fonctionnalités et développements réalisés cette année 2016 ainsi que des évolutions de développement initiés en 2015.
 
 APrint Studio 2016 avance sur la partie diffusion et pilotage de machine spécialisées pour la perforation de cartons.
+
+Cette nouvelle version doit beaucoup à Jean Pierre Rosset et Freddy Meyer, qui sont les papa du pilotage des machines numériques, intégré dans cette version.
+
+
 
 ##Nouvelles fonctionnalités
 
@@ -23,11 +27,36 @@ Un effort significatif a été réalisé par Jean Pierre et Freddy Meyer pour do
 
 
 
-Quelques Points d'amélioration ont été également apportés sur cette version 2016 :
+Quelques points d'amélioration ont été également apportés sur cette version 2016 :
 
 - Ajout de chiffres après la virgule pour la définition des instruments et des gammes
+- Percussions en français dans l'édition d'instrument, avec le code midi associé (facilite la définition des percussions)
 - Nouvelle façon de récupérer les instruments
 
+
+
+
+## Nouveau type de dépôt d'instruments
+
+Suite à l'arrêt de certains services de Google, nous avons retravaillé l'accès aux instruments via internet.
+
+Le gestionnaire d'instruments d'APrint propose maintenant la récupération d'instruments à partir d'une adresse internet. 
+
+La proposition d'instruments est maintenant accessible à un amateur éclairé qui ayant créé des instruments, peut les proposer directement aux utilisateurs via une adresse internet. 
+
+![](depot.png)
+
+
+
+En utilisant un site web externe et un fichier "instruments.xml",  il est donc possible maintenant de créer des dépôts d'instruments spécifiques:
+
+- Limonaires
+- Odin
+- Instruments de rue
+- Instruments de foire
+- ..... 
+
+La proposition d'instruments peut également être proposée avec une approche historique. 
 
 
 
@@ -60,9 +89,9 @@ Cette stratégie de perçage permet de ne pas faire reculer le poinçon pour des
 
 L'optimisation en déplacement est un algorithme informatique permettant de choisir l'ordre de perçage des coups de poinçon pour limiter les déplacements. Un résumé propose d'afficher le gain de déplacement du carton. 
 
-Des gains de déplacement d'un facteur 5 à 10 sont observés (réduisant considérablement le temps de perçage egalement).
+Des gains de déplacement d'un facteur 5 à 10 sont observés (réduisant considérablement le temps de perçage).
 
-La taille de la page d'optimisation est également reglable, permettant de limiter les déplacements arrière du poinçon et maintenir une précision de perforation.
+La taille de la page d'optimisation est également réglable, permettant de limiter les déplacements arrière du poinçon et maintenir une précision de perforation.
 
 
 
@@ -72,7 +101,9 @@ Une fois le perçage réglé, il est possible de perforer le carton dans APrint.
 
 ![bod7.jpg](bod7.jpg)
 
-Les phases de réglage sont également prévue pour une reprise après problèmes.
+
+
+Les phases de réglage sont également prévues dans le logiciel pour permettre une reprise après problème.
 
 
 
