@@ -1,5 +1,5 @@
 
-#Mecanique de la 2eme Machine de Jean Pierre
+#Mécanique de la 2eme Machine de Jean Pierre
 
 Jean Pierre Rosset - 2016
 
@@ -97,6 +97,3 @@ donc 934 secondes / 7498 = 0,1245 s par trou
 
 J'ai donc perforé avec les réducteurs de débit sur le vérin.
 
-Sur la sortie du compresseur j'ai ajouté un décanteur de condensation :
-
-![](dec.jpg)

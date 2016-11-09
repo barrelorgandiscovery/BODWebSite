@@ -8,7 +8,7 @@ Vous trouverez ici, l'ensemble des documents consolidés de la construction de m
 
 [L'électronique de la machine](electronique/electronique.md)
 
-##Parametrage
+##Paramétrage
 
 [Article sur le Paramétrage Logiciel pour la machine](logiciel/parametrage_machine.md)
 
