@@ -1,9 +1,9 @@
 #Mesure de vitesse Perfo Jean Pierre
 
-L'axe X est formé d'un rectangle et est de ce fait pas sujet à flexion.
+L'axe X est formé d'un rectangle et n'est de ce fait pas sujet à flexion.
 Pour revenir aux performances de ma perforatrice "KRUNCH", j'ai réalisé un chronomètre (un 2ème Arduino").
-Ce chronomètre est déclenché par 2 capteur Hall : le START et le STOP. 
-Ces 2 capteurs sont placé pour évaluer les déplacements et j'ai choisi 160 mm.
+Ce chronomètre est déclenché par 2 capteurs Hall : le START et le STOP. 
+Ces 2 capteurs sont placés pour évaluer les déplacements et j'ai choisi 160 mm.
 
 ![](sm1.jpg)
 

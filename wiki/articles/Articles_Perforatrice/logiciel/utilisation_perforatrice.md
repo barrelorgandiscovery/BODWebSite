@@ -24,6 +24,8 @@ Un clic gauche sur l’instrument fera apparaître une adresse
 
 Clic gauche maintenu, glisser simplement cette adresse dans la fenêtre « glisser – déposer des fichiers » dans la fenêtre d’APrint. Il faudra bien sûr s’arranger pour que les deux pages soient visibles. Au bout de quelques instants vous aurez l’indication  « instrument importé avec succès ».
 
+![](bod1-1.jpg)
+
 
 Il faut maintenant importer un fichier midi arrangé pour votre orgue. Là encore, Il suffit de glisser le fichier midi à perforer dans la fenêtre « glisser - déposer des fichiers » Dès que le fichier est importé, une fenêtre vous demandant de sélectionner votre orgue va apparaître. Si vous avez importé plusieurs orgues, il suffit de cliquer sur les orgues adjacents jusqu’à apparition de celui qui vous intéresse.
 

@@ -8,7 +8,7 @@ Vous trouverez ici, l'ensemble des documents consolidés de la construction de m
 
 [L'électronique de la machine](electronique/electronique.md)
 
-##Parametrage
+##Paramétrage
 
 [Article sur le Paramétrage Logiciel pour la machine](logiciel/parametrage_machine.md)
 
@@ -17,6 +17,6 @@ Vous trouverez ici, l'ensemble des documents consolidés de la construction de m
 [Article sur l'utilisation d'APrint Studio pour la perforation](logiciel/utilisation_perforatrice.md)
 
 
-##Elements techniques
+##Eléments techniques
 
 [Mesure de performances de la machine, paramétrage](miseaupoint/mesures.md)
