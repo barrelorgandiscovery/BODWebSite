@@ -3,22 +3,17 @@
 *Jean Pierre Rosset - 
 Freddy Meyer - Patrice Freydiere - 2016*
 
-##Eléments associés à l'électronique de pilotage de la machine
-
-![](c-blage-perfo-50229e4.jpg)
 
 
-
-##Driver TB6560
-
-Les drivers de moteur pas à pas sont les suivants :
-
-![](driverstb6560.png)
-
-Un ensemble de switchs est paramétré sur le driver pour définir les paramètres électriques, et de maintien.
-La table de configuration des drivers est indiquée sur la platine électronique.
+## Document Complet sur la partie électronique écrite par Jean Pierre
 
 
-##Shield Krunch Arduino
+<a href='Partie électrique_nov-2016.pdf'>
 
-à venir
+<img src="2016-11-17 21_57_51-Partie électrique.png" />
+
+</a>
+
+
+
+
