@@ -47,7 +47,12 @@ Cliquer sur le bouton « Open », sélectionner le port qui va bien.
 Vérifier que Grbl soit bien marqué dans la fenêtre « Firmware »
 Il faut maintenant rentrer les codes qui permettent à la machine de fonctionner.
 Dans l’onglet «  Commands » on écrit $0 =20 puis cliquer sur « entrée » du clavier
-$1=255 ….selon le listing de Jean – Pierre Rosset qui est disponible à l’adresse :  page du site
+
+[Exemple de fichier de paramètres (utilisé par Jean Pierre, en février 2016)](Params_15_02_2016.pdf)
+
+
+
+
 
 **A noter que nous n’êtes pas obligés d’écrire ce qui est entre parenthèses**
 
