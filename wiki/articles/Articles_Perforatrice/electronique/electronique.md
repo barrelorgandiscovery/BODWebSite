@@ -1,11 +1,20 @@
 #Electronique
 
-*Jean Pierre Rosset - 
-Freddy Meyer - Patrice Freydiere - 2016*
+*Jean Pierre Rosset - 2016*
 
 
 
-## Document Complet sur la partie électronique écrite par Jean Pierre
+## Documentation PDF Complete sur la partie électronique écrite par Jean Pierre
+
+
+
+*Novembre 2016 - Ajout sur la partie TB6600*
+
+
+
+Visualisation du document :
+
+
 
 
 <a href='Partie électrique_nov-2016.pdf'>
