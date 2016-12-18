@@ -6,19 +6,20 @@ Je suppose que votre machine est construite selon les indications que vous trouv
 Pour ce faire, il vous faudra quelques programmes :
 Selon la provenance de votre carte Arduino, il est possible que votre pc ne la reconnaisse pas. Il faudra juste installer un petit programme driver :
 
-	CH 340 ou 341 *  
-	ou installer l’environnement Arduino *
+[CH 340 ou 341 *](CH341SER.zip) : driver PC pour communiquer avec les arduino chinois
+[ou installer l’environnement Arduino *](https://www.arduino.cc/en/Main/Software) : driver PC et environnement de développement Arduino
 
 
 Les autres logiciels indispensables :
 
-	X loader *
-	Le fichier .hex *
-	Universal Gcode Sender *
-	Aprint 
+[X loader *](XLoader.zip) : Permet le chargement du programme dans l'arduino
+[Le fichier .hex *](https://raw.githubusercontent.com/frett27/grblPunch/master/grblPunch.hex) : le programme GRBLPunch à mettre dans l'arduino 
 
+[Universal Gcode Sender *](universal-1.0.9.zip) : outil permettant de communiquer avec GRBL Punch pour paramétrer la machine initialement
+[Site web de Gcode Sender](http://winder.github.io/ugs_website/) (pour plus d'informations)
 
-* Disponibles sur la page
+et APrint Studio, version  2016 minimum
+
 
 
 
