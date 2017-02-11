@@ -7,6 +7,16 @@
 * [Nouveautés APrint Studio 2016](articles/Nouvelles_Versions/2016/Whats_new_APrintStudio_2016.md)
 * [Nouveautés APrint Studio 2015](articles/Nouvelles_Versions/2015/Whats_new_APrintStudio_2015.md)
 
+
+
+## Documentation en ligne du logiciel
+
+Le logiciel est documenté , vous pouvez ci dessous accéder à la documentation en ligne
+
+[Documentation de la version 2016](/site/doc/2016)
+
+
+
 ---
 
 
