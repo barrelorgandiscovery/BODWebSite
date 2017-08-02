@@ -19,6 +19,8 @@
 
 Le logiciel est documenté , vous pouvez ci dessous accéder à la documentation en ligne
 
+[Documentation de la version 2017](/site/doc/2017)
+
 [Documentation de la version 2016](/site/doc/2016)
 
 
