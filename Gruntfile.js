@@ -38,12 +38,15 @@ module.exports = function(grunt) {
                         cwd: 'bower_components/bootstrap/dist',
                         src: ['**'],
                         dest: 'dist/lib/bootstrap/'
-                    },
-                    {
-                    expand: true,
-                    src: ['krunch/**'],
-                    dest: 'dist/'
-                }
+                    }, {
+                        expand: true,
+                        src: ['krunch/**'],
+                        dest: 'dist/'
+                    }, {
+                        expand: true,
+                        src: ['newsmedia/**'],
+                        dest: 'dist/'
+                    }
                 ]
             },
             resources: {
