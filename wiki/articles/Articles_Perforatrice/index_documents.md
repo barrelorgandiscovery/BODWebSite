@@ -6,6 +6,8 @@ Vous trouverez ici, l'ensemble des documents consolidés de la construction de m
 
 [La mécanique de la machine de Jean Pierre](mecanique/jeanpierre/2emeproto.md)
 
+[Video de présentation des éléments mécaniques](https://www.youtube.com/watch?v=4iaGYADh8EE)
+
 [L'électronique de la machine](electronique/electronique.md)
 
 ##Paramétrage
