@@ -6,6 +6,8 @@ Vous trouverez ici, l'ensemble des documents consolidés de la construction de m
 
 [La mécanique de la machine de Jean Pierre](mecanique/jeanpierre/2emeproto.md)
 
+[Video de présentation des éléments mécaniques](https://www.youtube.com/watch?v=4iaGYADh8EE)
+
 [L'électronique de la machine](electronique/electronique.md)
 
 ##Paramétrage
@@ -20,3 +22,17 @@ Vous trouverez ici, l'ensemble des documents consolidés de la construction de m
 ##Eléments techniques
 
 [Mesure de performances de la machine, paramétrage](miseaupoint/mesures.md)
+
+
+
+## Traduction de construction et mise en œuvre en Allemand, proposé par Freddy Meyer
+
+
+
+
+
+![](Flag_of_Germany.png)
+
+![](doc_traduction.png)
+
+[Laden Sie das Dokument herunter](Stanzmaschine gesteuert durch Arduino und Aprint par Freddy Meyer.doc)

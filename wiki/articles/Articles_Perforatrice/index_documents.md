@@ -22,3 +22,17 @@ Vous trouverez ici, l'ensemble des documents consolidés de la construction de m
 ##Eléments techniques
 
 [Mesure de performances de la machine, paramétrage](miseaupoint/mesures.md)
+
+
+
+## Traduction de construction et mise en œuvre en Allemand, proposé par Freddy Meyer
+
+
+
+
+
+![](Flag_of_Germany.png)
+
+![](doc_traduction.png)
+
+[Laden Sie das Dokument herunter](Stanzmaschine gesteuert durch Arduino und Aprint par Freddy Meyer.doc)

@@ -11,7 +11,6 @@
 
 * [Nouveautés APrint Studio 2015](articles/Nouvelles_Versions/2015/Whats_new_APrintStudio_2015.md)
 
-  ​
 
 
 
@@ -42,6 +41,10 @@ Le logiciel est documenté , vous pouvez ci dessous accéder à la documentation
 
 * [Creation d'instrument et de disques cartons en DXF](articles/Disques/Creation_Instrument_Disques_Carton.md)
 * [Reconnaissance automatique de disques cartons à partir d'une photo](articles/Reconnaissance_Cartons/RecognitionExtension.md)
+
+### Traduction dans un autre langue
+
+* [Article expliquant la démarche de traduction](articles/Traduction/traduire_autre_langue.md)
 
 ###Perforatrices GRBL / Mécanique / Electronique
 
