@@ -1,4 +1,4 @@
-#Utilisation APrint Studio pour le perçage
+# Utilisation APrint Studio pour le perçage
 
 par Freddy Meyer
 
@@ -12,10 +12,14 @@ Ouvrir APrint et importer un instrument
 
 
 Avant toute chose, il faudra importer l’instrument pour lequel vous voulez perforer le carton. Vous aurez ainsi tous les paramètres (nombres de touches, pas, mesure depuis le bord de référence…)
-Je vais prendre l’exemple d’un 27/29 touches pneumatique.
+Je vais prendre l’exemple d’un 27 touches pneumatique.
 A l’ouverture de APrint, cliquer sur le bouton « Aller sur le site »
 
 ![](bod1.jpg)
+
+En clickant sur "Instruments", une nouvelle fenêtre va s'ouvrir. Il faudra valider "Instruments par type" et choisir son orgue sur la page.
+
+
 
 
 ![](bod2.jpg)
@@ -31,8 +35,13 @@ Il faut maintenant importer un fichier midi arrangé pour votre orgue. Là encor
 
 Cliquer sur **«Afficher le carton»**
 
-Après un rapide calcul, vous aurez la visualisation du carton. Ici, j’en profite pour dire que les notes plus petites que 3 mm	 ne seront pas perforées. Ceci n’est bien sûr pas envisageable. Si ces notes y sont, c’est qu’elles ont une raison d’être.
-Alors comment résoudre ce problème ? Rien de plus simple ! Dans la fenêtre « Quickscript », il faudra cliquer sur **«agrandir à 3 mm les trous plus petits»**
+Après un rapide calcul, vous aurez la visualisation du carton. Ici, j’en profite pour dire que les notes plus petites que la taille du poinçon ne seront pas perforées. Ceci n’est bien sûr pas envisageable. Si ces notes y sont, c’est qu’elles ont une raison d’être.
+Alors comment résoudre ce problème ? Rien de plus simple ! 
+
+Dans la fenêtre « Quickscript », il faudra cliquer sur **«agrandir à 3 mm les trous plus petits»**
+
+Une vérification est néanmoins proposée dans le logiciel. Il vous proposera d'agrandir les trous trop petits à la taille du poiçon. 
+
 Je vous laisse découvrir les autres fonctionnalités et les divers onglets de cette page. 
 
 ![](ap1.jpg)
@@ -43,6 +52,10 @@ Une nouvelle fenêtre va s’ouvrir et qui confirmera que les trous ont été ag
 
 ![](bod3.jpg)
 
+
+A noter que « agrandir à 3 mm » n’est qu’une
+indication de fonction. Si vous avez  un poinçon de 3,3 ou 4 mm  (à définir dans le tableau suivant) les trous seront calculés selon
+ces dimensions.
 
 On peut fermer cette fenêtre et cliquer ensuite sur le bouton **«Gcode perfo windows»**
 Là, plusieurs options sont à votre disposition
@@ -57,7 +70,7 @@ Mm de recouvrement permet de faire revenir le poinçon légèrement en arrière 
 A l’inverse, pour du papier ou du carton pour pneumatique, il est conseillé de faire des ponts entre chaque trou. Il faudra donc donner les valeurs suivantes **«  - 1 »** ou  **« - 1,1 »**. On aura ainsi un pont de 1 ou 1,1 mm.
 
 Taille du poinçon sera la dimension de votre poinçon 
-Taille de page est en mm et détermine le retour effectué lors de la perforation. En mettant par exemple 60, le carton reculera de 60 mm pour permettre l’optimisation.
+Taille de page est en mm et détermine le retour effectué lors de la perforation. En mettant par exemple 50, le carton reculera de 50 mm pour permettre l’optimisation.
 
 ![](bod4.jpg)
 
@@ -87,10 +100,48 @@ Les trous perforés s’affichent en jaune. On peut ainsi voir le chemin parcour
 
 Les boutons **«previous et next»** permettent de reprendre une perforation.
 
-A savoir que lors d’une coupure de courant, on peut reprendre une perforation à l’endroit où elle s’est arrêtée. Il suffit de mesurer la longueur de carton déjà perforé, de rechercher cette longueur sur l’aperçu du carton, de comparer les trous et de cliquer sur le dernier trou effectué avant de cliquer sur **«punch»**. Il est conseillé de faire quelques essais sur des chutes de carton.
+
 
 ![](bod7.jpg)
 
 
 Certaines fenêtres peuvent différer en fonction de l’évolution du logiciel.
 
+
+
+Lesréglages ci dessus restent valables pour les versions plus anciennesd’Aprint mais comme ce logiciel évolue, quelques fonctionnalitésont été rajoutées et d’autres ont été simplifiées. Je ne peuxque vous conseiller de remplacer votre ancienne version.
+
+Ily a ainsi possibilité d’agrandir plus rapidement les trous troppetits 
+
+Onpeut commander un moteur pas à pas pour la perforation en lieu etplace du moteur de visseuse, d’un électroaimant ou d’un vérinpneumatique.
+
+Onpeut se passer du capteur de poinçon bas ...
+
+Dansle cas d’une utilisation de moteur pas à pas, sur Universal Gcodesender, modifiez la ligne $29 selon vos besoins. Il faudra bien sûrcharger le nouveau fichier .hex pour avoir ces options.
+
+$29= 0  si vous avez un capteur poinçon haut et un autre poinçon bas
+
+$29= 1  dans le cas où vous n’avez qu’un capteur poinçon haut
+
+$29= 10 si vous voulez piloter un moteur pas à pas pour la perforation.
+
+Il faudra aussi paramétrer $40 et \$41.
+
+Pour avoir la vitesse maximale lors de la perforation, il est conseilléde régler le driver de ce moteur au pas de 1 (switchs sur laplatine)
+
+Pour les lignes $40 et \$41, il faudra ajuster selon votre machine en sachant que plus le nombre sera petit, plus grande sera la vitesse mais que le moteur va décrocher à un moment donné.
+
+Exemple :
+
+$40= 200 (dans le cas de pas entiers). Modifiez cette valeur pour avoir la vitesse maximale tout en conservant le couple optimal. A un moment donné, le moteur va grogner ou ne plus avoir assez de puissance pour transpercer le carton.
+
+$41=1  Egalement à régler selon votre perforatrice 
+
+Mes réglages à titre indicatif : \$40 = 185   et $41 = 0.8
+
+### APrint	
+
+Il faudra toujours appliquer la procédure comme expliqué plus haut pour arriver à la page où l’on pourra sélectionner ou vérifier
+le port com qui permet au logiciel de communiquer avec la machine.
+
+@@@@

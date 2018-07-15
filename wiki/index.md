@@ -5,6 +5,8 @@
 
 * [Article de présentation APrint Studio](2014_Presentation_APrint_Studio/Presentation.md)
 
+* [Nouveautés APrint Studio 2018](articles/Nouvelles_Versions/2018/Whats_new_APrintStudio_2018.md)
+
 * [Nouveautés APrint Studio 2017](http://www.barrel-organ-discovery.org/site/doc/2017/product/mdwiki.html#!whatsnew/2017/Whats_new_APrintStudio_2017.md)
 
 * [Nouveautés APrint Studio 2016](articles/Nouvelles_Versions/2016/Whats_new_APrintStudio_2016.md)
@@ -17,6 +19,8 @@
 ## Documentation en ligne du logiciel
 
 Le logiciel est documenté , vous pouvez ci dessous accéder à la documentation en ligne
+
+[Documentation de la version 2017](/site/doc/2018)
 
 [Documentation de la version 2017](/site/doc/2017)
 

@@ -13,7 +13,9 @@ Selon la provenance de votre carte Arduino, il est possible que votre pc ne la r
 Les autres logiciels indispensables :
 
 [X loader *](XLoader.zip) : Permet le chargement du programme dans l'arduino
-[Le fichier .hex *](https://raw.githubusercontent.com/frett27/grblPunch/master/grblPunch.hex) : le programme GRBLPunch à mettre dans l'arduino 
+[Le fichier .hex V2 de grblPunch *](grblPunchV2.hex) : le programme GRBLPunch à mettre dans l'arduino 
+
+
 
 [Universal Gcode Sender *](universal-1.0.9.zip) : outil permettant de communiquer avec GRBL Punch pour paramétrer la machine initialement
 [Site web de Gcode Sender](http://winder.github.io/ugs_website/) (pour plus d'informations)
@@ -22,8 +24,7 @@ et APrint Studio, version  2016 minimum
 
 
 
-
-##Installation  préliminaire
+## Installation  préliminaire
 
 En connectant la carte Arduino  sur la prise usb, vous devez entendre le son classique d’un branchement  périphérique sur usb et les leds doivent clignoter sur la carte. Si tel n’est pas le cas, il faudra charger Ch 340 ou l’environnement Arduino sur votre pc.
 
@@ -71,9 +72,9 @@ Valider l’onglet **« Machine Control »** et cliquer sur le bouton **« $H
 
 Il faut maintenant s’occuper des réglages des déplacements X et Y. La précision de ces réglages est importante pour avoir les bons pas et la bonne vitesse de lecture de votre carton perforé.
 
-Il s’agit d’adapter les lignes $ 100 et $ 101
+​Il s’agit d’adapter les lignes  100 et  101
 
-Si les drivers TB 6560 sont réglés pour travailler en 16ème de pas, il faudra doubler les valeurs par rapport aux 8ème de pas.
+Si les drivers TB 6560 ou TB6600 sont réglés pour travailler en 16ème de pas, il faudra doubler les valeurs par rapport aux 8èmes de pas.
 
 Ces valeurs sont également en fonction du diamètre du rouleau d’entraînement du carton et le diamètre des roues dentées de la courroie.
 Mes valeurs pour du 16ème de pas (lignes à écrire ou à modifier dans « Commands ») 
