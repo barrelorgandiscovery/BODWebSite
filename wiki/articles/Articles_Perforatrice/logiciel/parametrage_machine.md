@@ -1,4 +1,4 @@
-#Mode d’emploi Perforatrice pilotée par Arduino et APrint Studio
+# Mode d’emploi Perforatrice pilotée par Arduino et APrint Studio
 
 par Freddy Meyer
 
@@ -95,6 +95,13 @@ Ajuster la ligne $100 jusqu’au résultat satisfaisant en n’oubliant pas de r
 
 Insérer maintenant un carton et répéter l’opération pour l’axe Y en faisant des repères sur le carton et en mesurant ensuite la justesse du déplacement. Ici ce sont les commandes Y+ et Y- 
 Ajuster les valeurs sur la ligne $101
+
+**ATTENTION, Depuis la version 2018, il est nécessaire de positionner également le registre $10 à 7**
+
+```
+$10=7
+```
+
 On peut en profiter pour régler le bord de référence en indiquant au programme le nombre de pas nécessaires pour aller du homing au bord de référence. Le poinçon doit être à moitié sur ce bord de référence.
 
 On revient sur la page précédente par le bouton **«  Commands »** et on tape : G10 L2 P1 X 12 
@@ -112,4 +119,7 @@ Ajuster la valeur X pour avoir le résultat escompté sans oublier qu’il faut 
 Dans la même fenêtre **« Commands »** vous pouvez aussi écrire M100 >entrée pour déclencher un coup de poinçon. 
 
 Votre machine est maintenant prête à  perforer les 1ers trous. 
-Pour ceci nous utilisons le programme Aprint
+
+[Pour ceci nous utilisons le programme Aprint](utilisation_perforatrice.md)
+
+
