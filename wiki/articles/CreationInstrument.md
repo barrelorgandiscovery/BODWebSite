@@ -1,6 +1,6 @@
 
 
-  
+
     
 
 #Notes sur l'enregistrement d'instruments dans le logiciel
@@ -12,7 +12,7 @@ __Novembre 2011__
 ##Introduction
 
 <p>Une des forces du logiciel est l'utilisation d'enregistrements d'instruments r&eacute;els. Le r&eacute;alisme de la restitution sonore, est tr&egrave;s utile pour donner une id&eacute;e d'un arrangement de morceaux de musique sur un instrument.</p>
-<p>Les logiciels APrint et APrint Studio utilisent des &eacute;chantillons des tuyaux et des hanches et les restituent pour chaque jeu de notes. </p>
+<p>Les logiciels APrint et APrint Studio utilisent des &eacute;chantillons des tuyaux et des anches et les restituent pour chaque jeu de notes. </p>
 <p>Cette technique permet d'avoir une bonne premi&egrave;re approche finale, avec un enregistrement simple.</p>
 <p>Dans les diff&eacute;rents enregistrements que nous avons pu effectuer, nous avons enregistr&eacute; des tuyaux sur les instruments eux-m&ecirc;mes (sans d&eacute;montage). Ceci permet de conserver certains aspects du jeu de l'instrument comme par exemple : certaines harmonies, certains bruits caract&eacute;ristiques ainsi que la restitution sonore dans l'espace. </p>
 <p>Par exp&eacute;rience, nous avons remarqu&eacute; que l'enregistrement sonore demande certaines pr&eacute;cautions sur les m&eacute;thodes d'&eacute;chantillonnage, de prise de son, et de choix des sons. </p>
@@ -24,7 +24,7 @@ __Novembre 2011__
 
 <p>Trois &eacute;tapes minimum sont n&eacute;cessaires pour la cr&eacute;ation d'un nouvel instrument :</p>
 <ul>
-      
+
 <li>D&eacute;finition de la gamme de l'instrument et cr&eacute;ation d'un carton de gamme</li>
       
 <li>Enregistrement des sons de la gamme et des registres</li>
@@ -45,7 +45,7 @@ __Novembre 2011__
 <br clear="none">
 <p>La d&eacute;finition de la gamme &agrave; enregistrer est clef dans le processus, et plusieurs points d'attention sont &agrave; consid&eacute;rer :</p>
 <ul>
-      
+
 <li>Un enregistrement de quelques secondes doit &ecirc;tre pr&eacute;vu pour chaque note. Ce long enregistrement de chaque note, permet d'&eacute;viter un travail de boucle sur l'&eacute;chantillon et introduire un biais num&eacute;rique. </li>
       
 <li>Une r&eacute;p&eacute;tition de chaque note est &eacute;galement &agrave; enregistrer, ceci permet de mieux rep&eacute;rer dans la partie sonore l'attaque et les temps de d&eacute;but et de fin du son par rapport &agrave; la commande m&eacute;canique.</li>
@@ -66,7 +66,7 @@ __Novembre 2011__
 ##3 - Num&eacute;risation des sons
 <p>Pour num&eacute;riser les sons de l'instrument, plusieurs mat&eacute;riels doivent &ecirc;tre consid&eacute;r&eacute;s :</p>
 <ul>
-      
+
 <li>Le Microphone</li>
       
 <li>L'enregistreur num&eacute;rique</li>
@@ -79,7 +79,7 @@ __Novembre 2011__
 <p>Pierre Penard sur son site propose un petit montage &eacute;lectronique pour utiliser deux &eacute;lectrets, et qui effectue une moyenne et une balance de prise de son de chaque cot&eacute; de l'instrument. (http://orgue-de-barbarie.pagesperso-orange.fr/bidouille.htm)</p>
 <p>Un micro r&eacute;cent capture &eacute;galement beaucoup mieux les fr&eacute;quences par rapport &agrave; un micro ayant quelques ann&eacute;es.</p>Penser &eacute;galement &agrave; la bande passante du micro, en effet certains micros d&eacute;di&eacute;s &agrave; la voix vont att&eacute;nuer les basses, pourtant tr&egrave;s importantes dans l'enregistrement d'un orgue de foire.<p>La prise de son est quelque chose de complexe, et &eacute;galement fonction du niveau de qualit&eacute; souhait&eacute; dans l'enregistrement. Plus il est souhait&eacute; une grande fid&eacute;lit&eacute;, plus la mise en oeuvre sera d&eacute;licate.</p>
 <p>
-      
+
 <b>En retour d'exp&eacute;rience, lors de l'enregistrement, il est n&eacute;cessaire que le micro une fois positionn&eacute; ne soit plus d&eacute;plac&eacute; pour l'ensemble des &eacute;chantillons. En effet le d&eacute;placement du micro en cours de route ne refl&egrave;tera plus la balance sonore naturelle de l'instrument et des diff&eacute;rents les volumes des tuyaux d'origine. Si le micro est d&eacute;plac&eacute;, cela peut donner des r&eacute;sultats hasardeux.</b>
     
 </p>
@@ -102,7 +102,7 @@ __Novembre 2011__
 <p>Une fois les sons r&eacute;cup&eacute;r&eacute;s et enregistr&eacute;s, il reste une phase importante dans la construction sonore de l'instrument : le "mapping".</p>
 <p>Le "mapping" consiste &agrave; attribuer un son &agrave; une ou plusieurs notes de l'instrument, quelques guides ci dessous permettront de tirer au mieux de l'&eacute;chantillonnage r&eacute;alis&eacute;:</p>
 <ul>
-      
+
 <li>Mapper les sons dans les m&ecirc;mes sections de registres, autrement dit : ne prenez pas une note du chant pour la mettre sur une note de l'accompagnement. Connaissez la facture de votre instrument et regardez bien les diff&eacute;rents types de tuyaux pour prendre les sons ad&eacute;quats.</li>
       
 <li>Choisissez dans les sons d'une section de registre, un ou plusieurs sons bien enregistr&eacute;s. Il arrive que certains tuyau ne soient pas bien accord&eacute;s ou r&eacute;agissent diff&eacute;remment de leur voisins. Cela peut &ecirc;tre souhaitable pour la bonne conformit&eacute; de restitution. <br clear="none">Si un tyau est "particulier" et que vous souhaitez garder ce comportement, enregistrez alors les tuyau voisins). Si vous utilisez ce son sur plusieurs tuyaux, vous g&eacute;n&eacute;ralisez alors ce caract&egrave;re particulier, donc vous changez l'identit&eacute; de l'instrument.<br clear="none">

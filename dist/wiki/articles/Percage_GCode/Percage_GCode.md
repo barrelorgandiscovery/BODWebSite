@@ -1,4 +1,4 @@
-#Pilotage du percage de cartons en utilisant les GCodes (Arduino + GRBL) 
+# Pilotage du percage de cartons en utilisant les GCodes (Arduino + GRBL) 
 
 *Juin 2016* - Mise à jour des photos, Ajout d'une documentation de Jean Pierre sur la partie Electronique et Electrique.
 
@@ -6,8 +6,7 @@
 
 *2015 - 2016* - Article rédigé par Patrice Freydiere, Jean Pierre Rosset
 
-
-##Introduction 
+## Introduction 
 
 
 Cette année 2015 - 2016, Jean Pierre Rosset a réalisé une perforatrice automatique pour carton, en utilisant le meilleure de la technologie actuelle. Fort des projets Open Source Existants, le lien entre la machine outil et l'ordinateur se trouve grandement simplifié, améliorant de fait la fiabilité du pilotage.
@@ -44,8 +43,7 @@ Indication sur le cablage électrique de la machine de Jean Pierre :
 
 Vous pouvez contacter les auteurs (Jean Pierre et Freddy) pour avoir des informations plus techniques sur la construction. Beaucoup d'éléments techniques ont été postés sur le forum  [http://orguedebarbarie.vraiforum.com/f7-Les-poinconneuses.htm](http://orguedebarbarie.vraiforum.com/f7-Les-poinconneuses.htm)
 
-
-##Logiciel spécialisé pour les machines CNC à perforation de carton
+## Logiciel spécialisé pour les machines CNC à perforation de carton
 
 Dans le cadre du projet, le logiciel GRBL a été modifié pour les machines à perforation, plusieurs modifications ont été mises en place :
 
@@ -54,7 +52,7 @@ Dans le cadre du projet, le logiciel GRBL a été modifié pour les machines à 
 
 le projet dérivé de GRBL - GRBLPunch est disponible et TELECHARGEABLE à cette adresse : [https://github.com/frett27/grblPunch](https://github.com/frett27/grblPunch)
 
-##Mise en place de la partie logicielle de commande par l'arduino
+## Mise en place de la partie logicielle de commande par l'arduino
 
 La mise en place passe par plusieurs étapes, 
 
@@ -66,7 +64,7 @@ La mise en place passe par plusieurs étapes,
 
 
 
-##Configuration
+## Configuration
 
 Une fois le chargement du programme réalisé, l'outil UniversalGCodeSender, permet d'ouvrir une console sur l'arduino afin de pouvoir paramétrer GBRL.
 
@@ -77,7 +75,7 @@ les commandes peuvent être lancées depuis la boite "commande",
 le paramétrage des commandes suit ces indications : [https://github.com/grbl/grbl/wiki/Configuring-Grbl-v0.9](https://github.com/grbl/grbl/wiki/Configuring-Grbl-v0.9)
 
 **Note** : Freddy a réalisé une traduction de l'ensemble des paramètres, (cliquez sur le document pour l'ouvrir)
- 
+
 <a href="PARAMÈTRES DU GRBL_JPR_Freddy.pdf" title="Cliquez pour accéder à la documentation">
 ![Parametrage GRBL](ManuelParametres.PNG)
 </a>
@@ -89,7 +87,7 @@ dans notre cas, nous avons paramétré le système en utilisant ces résultats: 
 [Parametres complets de Jean Pierre utilisés en production](Params_15_02_2016.pdf)
 
 
-#Et le carton alors ???
+# Et le carton alors ???
 
 APrint 2016, intègre une nouvelle fenêtre de création du plan de perçage et génère un fichier GCODE, qui peut être utilisé directement en perçage.
 

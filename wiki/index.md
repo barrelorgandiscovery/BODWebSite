@@ -20,7 +20,7 @@
 
 Le logiciel est documenté , vous pouvez ci dessous accéder à la documentation en ligne
 
-[Documentation de la version 2017](/site/doc/2018)
+[Documentation de la version 2018](/site/doc/2018)
 
 [Documentation de la version 2017](/site/doc/2017)
 
@@ -45,6 +45,10 @@ Le logiciel est documenté , vous pouvez ci dessous accéder à la documentation
 
 * [Creation d'instrument et de disques cartons en DXF](articles/Disques/Creation_Instrument_Disques_Carton.md)
 * [Reconnaissance automatique de disques cartons à partir d'une photo](articles/Reconnaissance_Cartons/RecognitionExtension.md)
+
+###Export DXF
+
+- [Export en fichier DXF](articles/ExportDXF/DXFExport.md)
 
 ### Traduction dans un autre langue
 
