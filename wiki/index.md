@@ -33,20 +33,20 @@ Le logiciel est documenté , vous pouvez ci dessous accéder à la documentation
 
 ## <img src="tools.jpg" width=50 /> Articles techniques
 
-###Enregistrement
+### Enregistrement
 
 * [Notes sur l'enregistrement sonore d'un instrument](articles/CreationInstrument.md) 
 
-###Montage de cartons
+### Montage de cartons
 
 * [Note sur le montage d'un carton, nouveau outils de la version 2015](articles/Montage_Cartons/Montage_Cartons.md)
 
-###Disques Aristons
+### Disques Aristons
 
 * [Creation d'instrument et de disques cartons en DXF](articles/Disques/Creation_Instrument_Disques_Carton.md)
 * [Reconnaissance automatique de disques cartons à partir d'une photo](articles/Reconnaissance_Cartons/RecognitionExtension.md)
 
-###Export DXF
+### Export DXF
 
 - [Export en fichier DXF](articles/ExportDXF/DXFExport.md)
 
@@ -54,9 +54,12 @@ Le logiciel est documenté , vous pouvez ci dessous accéder à la documentation
 
 * [Article expliquant la démarche de traduction](articles/Traduction/traduire_autre_langue.md)
 
-###Perforatrices GRBL / Mécanique / Electronique
+### Perforatrices GRBL / Mécanique / Electronique
 
 Ensemble d'articles sur la mise en place, construction et pilotage d'une machine à perforer les cartons.
 
 * [Pilotage du perçage avec une perforatrice utilisant GRBL Punch](articles/Articles_Perforatrice/index_documents.md)
 
+### Perforatrice GRBL LASER
+
+- [Setup pour les machines à Perfo Laser (Krunch Laser)](articles/Articles_Perforatrice_Lazer/Setup_Perfo_Lazer_GRBL.md)
