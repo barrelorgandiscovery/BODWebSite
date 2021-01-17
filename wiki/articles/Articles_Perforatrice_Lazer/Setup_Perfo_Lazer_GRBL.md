@@ -127,7 +127,7 @@ Le paramétrage utilisé pour la perfo de Jean Pierre :
 | $4=0                           | Step enable invert, 			boolean   |
 | $5=1                           | Limit pins invert, 			boolean    |
 | $6=0                           | Probe pin invert, 			boolean     |
-| $10=7                          | Status report, mask                       |
+| $10=2                          | Status report, mask                       |
 | $11=0.010                      | Junction deviation, 			mm        |
 | $12=0.002                      | Arc tolerance, mm                         |
 | $13=0                          | Report inches, 			boolean        |
