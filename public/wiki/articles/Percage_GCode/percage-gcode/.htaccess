@@ -1,4 +1,0 @@
-# AddHandler php .php
-# AddHandler phpextensionmgr .php
-
-RedirectMatch permanent ^/$ http://www.barrel-organ-discovery.org/site/index.html

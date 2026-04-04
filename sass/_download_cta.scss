@@ -159,6 +159,22 @@
   color: var(--bod-color-primary-dark);
 }
 
+// « Version antérieure » / legacy — visible on primary & info CTAs
+.bod-download-page .bod-dl-btn .bod-dl-tag--legacy {
+  background: rgba(255, 247, 237, 0.98) !important;
+  border: 1px solid rgba(234, 88, 12, 0.4) !important;
+  color: #9a3412 !important;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.bod-download-page .bod-dl-legacy-alert {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: var(--bod-radius-md);
+}
+
 // --- Context: GitHub releases banner ---
 .bod-download-page .bod-dl-releases-banner__lead {
   margin-bottom: 1rem;

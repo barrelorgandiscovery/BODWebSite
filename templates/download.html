@@ -19,8 +19,11 @@
         </div>
 
         <div class="jumbotron bod-dl-releases-banner">
-            <h1>Disponibilité des nouvelle versions</h1>
-            <p class="bod-dl-releases-banner__lead text-muted">Les nouvelles versions sont publiées sur GitHub (installateurs et notes).</p>
+            <h1>Disponibilité des nouvelles versions</h1>
+            <p class="bod-dl-releases-banner__lead text-muted">
+                Les <strong>dernières</strong> versions (installateurs et notes) sont publiées sur
+                <strong>GitHub — Releases</strong>. Utilisez le lien ci-dessous pour télécharger la version la plus récente du projet.
+            </p>
             <p>
                 <a class="btn btn-default btn-lg bod-dl-btn bod-dl-releases-banner__cta" role="button" href="https://github.com/barrelorgandiscovery/aprintproject/releases">
                     {{ dlicon::hero_releases_tag() }}
@@ -33,64 +36,6 @@
                     </span>
                 </a>
             </p>
-        </div>
-
-        <div class="jumbotron bod-dl-product-hero">
-            <div class="row">
-                <div class="col-md-7 bod-dl-product-hero__copy">
-                    <h1>APrint Studio 2020 Q2 - Fix 1</h1>
-                    <p>Application dédiée aux arrangeurs et utilisateurs avertis, permettant
-                        l'adaptation de morceaux de musique pour les orgues de barbarie</p>
-
-                    <div class="bod-dl-product-hero__actions">
-                        <a class="btn btn-info btn-lg bod-dl-product-hero__btn bod-dl-btn" role="button" href="https://www.barrel-organ-discovery.org/doc/2020/product/mdwiki.html#!whatsnew/2020/Whats_new_APrintStudio_2020_q2.md">
-                            {{ dlicon::hero_notes_doc() }}
-                            <span class="bod-dl-btn__main">
-                                <span class="bod-dl-btn__title">Notes d'information — 2020 Q2 Fix 1</span>
-                                <span class="bod-dl-btn__badges">
-                                    <span class="bod-dl-tag">Nouveautés</span>
-                                    <span class="bod-dl-tag">2020 Q2</span>
-                                </span>
-                            </span>
-                        </a>
-                        <a class="btn btn-primary btn-lg bod-dl-product-hero__btn bod-dl-btn" role="button" href="https://www.barrel-organ-discovery.org/builds/2021-Q2/x64_APrintStudioInstall_2020.12.751.exe">
-                            {{ dlicon::hero_windows() }}
-                            <span class="bod-dl-btn__main">
-                                <span class="bod-dl-btn__title">Télécharger — Windows 64 bits</span>
-                                <span class="bod-dl-btn__badges">
-                                    <span class="bod-dl-tag">Windows</span>
-                                    <span class="bod-dl-tag">x64</span>
-                                    <span class="bod-dl-tag">.exe</span>
-                                </span>
-                            </span>
-                        </a>
-                        <a class="btn btn-primary btn-lg bod-dl-product-hero__btn bod-dl-btn" role="button" href="https://www.barrel-organ-discovery.org/builds/2021-Q2/x32_APrintStudioInstall_2020.12.751.exe">
-                            {{ dlicon::hero_windows() }}
-                            <span class="bod-dl-btn__main">
-                                <span class="bod-dl-btn__title">Télécharger — Windows 32 bits</span>
-                                <span class="bod-dl-btn__badges">
-                                    <span class="bod-dl-tag">Windows</span>
-                                    <span class="bod-dl-tag">x86</span>
-                                    <span class="bod-dl-tag">.exe</span>
-                                </span>
-                            </span>
-                        </a>
-                        <a class="btn btn-primary btn-lg bod-dl-product-hero__btn bod-dl-btn" role="button" href="https://www.barrel-organ-discovery.org/builds/2021-Q2/NixAndMacOsX_2020.12.751.zip">
-                            {{ dlicon::hero_zip() }}
-                            <span class="bod-dl-btn__main">
-                                <span class="bod-dl-btn__title">Télécharger — macOS / Linux</span>
-                                <span class="bod-dl-btn__badges">
-                                    <span class="bod-dl-tag">Archive</span>
-                                    <span class="bod-dl-tag">.zip</span>
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-5 text-center bod-dl-product-hero__visual">
-                    <img class="img-responsive bod-dl-product-hero__shot" src="{{ get_url(path='resources/splash-aprint-studio-2018.jpg') }}" width="320" alt="APrint Studio">
-                </div>
-            </div>
         </div>
 
         <h3>Présentation</h3>
@@ -241,11 +186,85 @@
 
         </div>
 
+
+        <div class="jumbotron bod-dl-product-hero">
+            <div class="row">
+                <div class="col-md-7 bod-dl-product-hero__copy">
+                    <h1>APrint Studio 2020 Q2 - Fix 1</h1>
+                    <p>Application dédiée aux arrangeurs et utilisateurs avertis, permettant
+                        l'adaptation de morceaux de musique pour les orgues de barbarie</p>
+
+                    <p class="alert alert-warning bod-dl-legacy-alert">
+                        <strong>Téléchargements directs sur ce site :</strong> les installateurs ci-dessous sont des
+                        <strong>versions antérieures</strong> encore hébergées ici (fichiers historiques).
+                        Pour la <strong>dernière version</strong> d&rsquo;APrint Studio, ouvrez
+                        <a href="https://github.com/barrelorgandiscovery/aprintproject/releases" class="alert-link">GitHub — Releases</a>
+                        (voir l&rsquo;encadré bleu plus haut).
+                    </p>
+
+                    <div class="bod-dl-product-hero__actions">
+                        <a class="btn btn-info btn-lg bod-dl-product-hero__btn bod-dl-btn" role="button" href="https://www.barrel-organ-discovery.org/doc/2020/product/mdwiki.html#!whatsnew/2020/Whats_new_APrintStudio_2020_q2.md">
+                            {{ dlicon::hero_notes_doc() }}
+                            <span class="bod-dl-btn__main">
+                                <span class="bod-dl-btn__title">Notes d'information — 2020 Q2 Fix 1</span>
+                                <span class="bod-dl-btn__badges">
+                                    <span class="bod-dl-tag bod-dl-tag--legacy">Documentation historique</span>
+                                    <span class="bod-dl-tag">2020 Q2</span>
+                                </span>
+                            </span>
+                        </a>
+                        <a class="btn btn-primary btn-lg bod-dl-product-hero__btn bod-dl-btn" role="button" href="https://www.barrel-organ-discovery.org/builds/2021-Q2/x64_APrintStudioInstall_2020.12.751.exe">
+                            {{ dlicon::hero_windows() }}
+                            <span class="bod-dl-btn__main">
+                                <span class="bod-dl-btn__title">Télécharger — Windows 64 bits</span>
+                                <span class="bod-dl-btn__badges">
+                                    <span class="bod-dl-tag bod-dl-tag--legacy">Version antérieure</span>
+                                    <span class="bod-dl-tag">Windows</span>
+                                    <span class="bod-dl-tag">x64</span>
+                                    <span class="bod-dl-tag">.exe</span>
+                                </span>
+                            </span>
+                        </a>
+                        <a class="btn btn-primary btn-lg bod-dl-product-hero__btn bod-dl-btn" role="button" href="https://www.barrel-organ-discovery.org/builds/2021-Q2/x32_APrintStudioInstall_2020.12.751.exe">
+                            {{ dlicon::hero_windows() }}
+                            <span class="bod-dl-btn__main">
+                                <span class="bod-dl-btn__title">Télécharger — Windows 32 bits</span>
+                                <span class="bod-dl-btn__badges">
+                                    <span class="bod-dl-tag bod-dl-tag--legacy">Version antérieure</span>
+                                    <span class="bod-dl-tag">Windows</span>
+                                    <span class="bod-dl-tag">x86</span>
+                                    <span class="bod-dl-tag">.exe</span>
+                                </span>
+                            </span>
+                        </a>
+                        <a class="btn btn-primary btn-lg bod-dl-product-hero__btn bod-dl-btn" role="button" href="https://www.barrel-organ-discovery.org/builds/2021-Q2/NixAndMacOsX_2020.12.751.zip">
+                            {{ dlicon::hero_zip() }}
+                            <span class="bod-dl-btn__main">
+                                <span class="bod-dl-btn__title">Télécharger — macOS / Linux</span>
+                                <span class="bod-dl-btn__badges">
+                                    <span class="bod-dl-tag bod-dl-tag--legacy">Version antérieure</span>
+                                    <span class="bod-dl-tag">Archive</span>
+                                    <span class="bod-dl-tag">.zip</span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-5 text-center bod-dl-product-hero__visual">
+                    <img class="img-responsive bod-dl-product-hero__shot" src="{{ get_url(path='resources/splash-aprint-studio-2018.jpg') }}" width="320" alt="APrint Studio">
+                </div>
+            </div>
+        </div>
+
+
         <div class="panel panel-default bod-dl-panel--archives">
             <div class="panel-heading">{{ dlicon::panel_inbox() }} Téléchargement des anciennes versions</div>
             <div class="panel-body bod-dl-archives">
 
-                <p class="bod-dl-archives-note text-muted">Installateurs conservés à titre historique ; pour une installation neuve, préférez les <a href="https://github.com/barrelorgandiscovery/aprintproject/releases">versions publiées récemment</a>.</p>
+                <p class="bod-dl-archives-note text-muted">
+                    Ces liens sont des <strong>anciennes versions</strong> (archives). Pour une installation neuve, utilisez les
+                    <a href="https://github.com/barrelorgandiscovery/aprintproject/releases">dernières versions sur GitHub — Releases</a>.
+                </p>
 
                 <section class="bod-dl-release">
                     <h4 class="bod-dl-release__title"><span class="bod-dl-year">2019</span> <span class="bod-dl-pill" title="Build archivé — non recommandé pour une nouvelle installation">Archives</span></h4>
@@ -429,12 +448,18 @@
                 <li>Universal GCode Sender - outil pour envoyer des commandes GCode à GRBL</li>
             </ul>
             <p>ATTENTION, si vous installez en mode "sans réseau internet", il faudra installer Java pour faire fonctionner GCode Sender</p>
+            <p class="alert alert-warning bod-dl-legacy-alert">
+                <strong>Téléchargement direct :</strong> archive <strong>version antérieure</strong> (2018) hébergée sur ce site.
+                Pour les logiciels les plus récents du projet APrint, voir
+                <a href="https://github.com/barrelorgandiscovery/aprintproject/releases" class="alert-link">GitHub — Releases</a>.
+            </p>
             <div class="bod-dl-krunch-cta-wrap">
                 <a class="btn btn-primary btn-lg bod-dl-btn bod-dl-krunch-cta" role="button" href="{{ get_url(path='krunch/telechargements/2018_Krunch.zip') }}">
                     {{ dlicon::krunch_zip() }}
                     <span class="bod-dl-btn__main">
                         <span class="bod-dl-btn__title">Télécharger la version 2018</span>
                         <span class="bod-dl-btn__badges">
+                            <span class="bod-dl-tag bod-dl-tag--legacy">Version antérieure</span>
                             <span class="bod-dl-tag">Kruncheuse</span>
                             <span class="bod-dl-tag">ZIP</span>
                             <span class="bod-dl-tag">2018</span>

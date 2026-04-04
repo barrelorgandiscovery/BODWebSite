@@ -283,6 +283,48 @@
   margin-right: auto;
 }
 
+// Home — Virtual Book Player news (image + text)
+.bod-home-vbp {
+  align-items: flex-start;
+}
+
+.bod-home-vbp__figure {
+  display: block;
+  padding: 12px;
+  border-radius: var(--bod-radius-md);
+  border: 1px solid var(--bod-panel-border);
+  background: linear-gradient(180deg, #f8fafc 0%, #fff 100%);
+  box-shadow: 0 1px 3px rgba(1, 38, 101, 0.08);
+  text-decoration: none !important;
+}
+
+.bod-home-vbp__figure:hover,
+.bod-home-vbp__figure:focus {
+  border-color: rgba(38, 114, 215, 0.35);
+  box-shadow: 0 2px 8px rgba(1, 38, 101, 0.12);
+}
+
+.bod-home-vbp__figure img {
+  display: block;
+  margin: 0 auto;
+  max-height: min(280px, 55vh);
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.bod-home-vbp__caption {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.bod-home-vbp__copy p:last-child {
+  margin-bottom: 0;
+}
+
 // Kill any stray list bullets if user-agent / resets conflict with .site-nav
 .bod-site .site-header ul.site-nav {
   list-style-type: none !important;

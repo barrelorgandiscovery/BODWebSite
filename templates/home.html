@@ -21,11 +21,23 @@
         <div class="panel panel-default">
             <div class="panel-heading"><span class="glyphicon glyphicon-star"></span>Pour un accès rapide, vous pouvez suivre les liens ci dessous</div>
             <div class="panel-body">
-                <div style="font-size:20px;">APrint Studio 2020 Q2 - Fix 1 <small>"Gérard et Ludwig"</small>
-                    <span class="badge">Aout 2021</span>
-                    <a role="button" class="btn btn-default btn-md" href="{{ get_url(path='@/download.md') }}">
-                        <span class="glyphicon glyphicon-download-alt"></span> Télécharger APrint Studio
-                    </a>
+                <div class="bod-home-aprint-lead" style="margin-bottom:1.25rem;">
+                    <p style="font-size:17px; margin-bottom:0.75rem;">
+                        <strong>APrint Studio</strong> — les versions les plus récentes sont publiées sur
+                        <a href="https://github.com/barrelorgandiscovery/aprintproject/releases">GitHub (section Releases)</a>
+                        du projet associé. La page
+                        <a href="{{ get_url(path='@/download.md') }}">Téléchargements</a>
+                        reprend ce lien et le détail des installateurs.
+                    </p>
+                    <p style="margin-bottom:0.85rem;">
+                        La dernière version fournie sous forme de <strong>bundle</strong> est
+                        <strong>«&nbsp;Pierre Louis&nbsp;»</strong>.
+                    </p>
+                    <p style="margin-bottom:0;">
+                        <a role="button" class="btn btn-default btn-md" href="{{ get_url(path='@/download.md') }}">
+                            <span class="glyphicon glyphicon-download-alt"></span> Télécharger APrint Studio
+                        </a>
+                    </p>
                 </div>
                 <div>Apprendre à importer des instruments dans APrint Studio
                     <a role="button" class="btn btn-default btn-md" href="https://www.barrel-organ-discovery.org/site/doc/2019/product/mdwiki.html#!getinstruments.md">
@@ -33,7 +45,7 @@
                     </a>
                 </div>
                 <div>Accès au site de téléchargement des instruments <span class="badge">Rubrique Instruments</span>
-                    <a role="button" class="btn btn-default btn-md" href="https://www.barrel-organ-discovery.org/instruments/instruments-par-types">
+                    <a role="button" class="btn btn-default btn-md" href="https://www.barrel-organ-discovery.org/instruments/">
                         <span class="glyphicon glyphicon-star"></span> Accès à la rubrique "Instruments"
                     </a>
                 </div>
@@ -46,15 +58,30 @@
         </div>
 
         <div class="page-header">
-            <h1>Dernières Nouvelles du front</h1>
+            <h1>Dernières Nouvelles</h1>
         </div>
 
-    <div class="panel panel-default">
-        <div class="panel-heading"><span class="glyphicon glyphicon-globe"></span>Mise en ligne d'un fix pour la version 2020 Q2</div>
+    <div class="panel panel-default bod-home-vbp-panel">
+        <div class="panel-heading"><span class="glyphicon glyphicon-globe"></span>Virtual Book Player — nouvelle version</div>
         <div class="panel-body">
-            <div class="row">
-                <div class="col-md-10">
-                    <p>Fixs, Fixs, Fixs, simplifiant la vie des utilisateurs.</p>
+            <div class="row bod-home-vbp">
+                <div class="col-sm-5 col-md-4 bod-home-vbp__visual">
+                    <a href="https://github.com/barrelorgandiscovery/virtualbookplayer/releases" class="bod-home-vbp__figure">
+                        <img class="img-responsive" src="{{ get_url(path='newsmedia/virtualbookplayer-new-logo.png') }}" width="786" height="799" alt="Virtual Book Player — interface et logo récents">
+                    </a>
+                    <p class="bod-home-vbp__caption text-muted">Aperçu du rendu actuel (logo &amp; présentation du projet sur GitHub).</p>
+                </div>
+                <div class="col-sm-7 col-md-8 bod-home-vbp__copy">
+                    <p>
+                        Une <strong>nouvelle version</strong> de <strong>Virtual Book Player</strong> est disponible.
+                        Téléchargez les installateurs et archives depuis la page
+                        <a href="https://github.com/barrelorgandiscovery/virtualbookplayer/releases">Releases sur GitHub</a>
+                        (choisissez la version adaptée à votre plateforme dans les assets).
+                    </p>
+                    <p>
+                        Pour la description du projet, l&rsquo;historique des versions et les prérequis (par ex. runtime Visual C++ sous Windows), consultez la
+                        <a href="https://github.com/barrelorgandiscovery/virtualbookplayer">page du projet sur GitHub</a>.
+                    </p>
                 </div>
             </div>
         </div>
