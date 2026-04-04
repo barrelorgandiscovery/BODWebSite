@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}Krunch Laser | {{ config.title }}{% endblock %}
+{% block meta_desc %}
+<meta name="description" content="Découpe laser — Krunch Laser">
+{% endblock %}
+{% block content %}
+<div class="container">
+
+        <div class="page-header">
+            <h1>Découpe Laser, la KRUNCH LASER - par Jean Pierre Rosset</h1>
+        </div>
+
+        <div class="lead">
+
+            <p>Plusieures perforatrices laser ont été construites cette dernières années, forts de composants accessibles et de la connaissance des constructeurs amateurs, ces dernières sont très abordables et évitent un lourd outillage pour la perforation automatique des cartons d'orgue. Jean Pierre nous livre les détails de sa nouvelle machine, ainsi que les éléments nécessaires à la construction.
+            </p>
+        </div>
+<div class="panel panel-primary">
+	  <div class="panel-heading">
+<h3 class="panel-title"><span class="glyphicon glyphicon-warning-sign" style="margin-right:10px"></span>ATTENTION</h3>
+            </div>
+<div class="panel-body">
+            <p>ATTENTION : l'utilisation , le bricolage ou la construction d'une perforatrice laser NECESSITE DES PRECAUTIONS DE SECURITE : CAPITONNAGE, LUNETTES, EXTACTION DES FUMEES, DISPOSITIFS ANTI FEU</p>
+</div>
+            </div>
+
+<div class="container">
+
+<div class="row">
+  <div class="col-md-12">
+<div class="thumbnail text-center">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7Bq612acyg" title="Krunch Laser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <div class="caption">Version <span class="badge">2020</span> de la Krunch LASER de Jean Pierre à pilotage Moteur Pas à Pas</div>
+
+ </div>
+</div>
+</div>
+
+</div>
+<div class="container">
+<p>Sur une base de modules CNC, et intégrant la dernière version de GRBL 1.1 Lazer, cette machine se pilote comme une machine CNC. </p>
+<p>La puissance du laser défini la vitesse maximum.</p>
+
+</div>
+
+
+	<div class="panel panel-primary">
+	  <div class="panel-heading">
+		  <h3 class="panel-title"><span class="glyphicon glyphicon-globe"></span>&nbsp;éléments de construction et paramètrage</h3>
+	  </div>
+	  <div class="panel-body">
+		  <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+<a href="{{ get_url(path='laser/Partie_Electrique_LASER_2020.doc') }}"><img src="{{ get_url(path='laser/partie_electrique.png') }}" alt="Partie électrique"></a>
+
+                <div class="caption">Clickez sur l'image pour télécharger le document</div>
+                    </div>
+			    </div>
+
+          </div>
+	 </div>
+	</div>
+
+</div>
+{% endblock %}

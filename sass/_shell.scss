@@ -1,0 +1,99 @@
+@use "tokens" as *;
+
+// -----------------------------------------------------------------------------
+// Page shell: main column width, margins (aligned with original fixed-width feel)
+// -----------------------------------------------------------------------------
+
+// No horizontal page scrollbar: clip stray overflow (e.g. grid margins, legacy fixed widths)
+html {
+  overflow-x: hidden;
+}
+
+.bod-site {
+  background: #fff;
+}
+
+.bod-main {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 40vh;
+  padding-bottom: 2.5rem;
+}
+
+// Fluid media & embeds — intrinsic widths (e.g. 560×315 iframes, large images) must not widen the page
+// Exclude home hero splash: bounded in _layout.scss (.hero-back__thumb), not full column width
+.bod-main img:not(.hero-back__thumb),
+.bod-main video,
+.bod-main canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.bod-main iframe,
+.bod-main embed,
+.bod-main object {
+  max-width: 100%;
+}
+
+// Long URLs / unbroken strings wrap instead of stretching the layout
+.bod-main .container,
+.page-content,
+.wiki-content {
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+// Markdown pages (non-wiki): same constraints as wiki for code blocks / tables
+.page-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.page-content table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+}
+
+.page-content th,
+.page-content td {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.bod-main > .container:first-of-type .page-header:first-child {
+  margin-top: 1.5rem;
+}
+
+.bod-main .page-header {
+  margin-top: 2.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.bod-main .page-header h1 {
+  margin-top: 0;
+}
+
+// All primary columns (header, main, hero): same max width + gutters as the legacy fixed-width feel
+.bod-site .container {
+  max-width: var(--bod-content-max);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--bod-gutter-x);
+  padding-right: var(--bod-gutter-x);
+}
+
+// Bootstrap 3 grid assumes 15px container padding; we use --bod-gutter-x — keep rows/cols aligned
+.bod-site .container .row {
+  margin-left: calc(-1 * var(--bod-gutter-x));
+  margin-right: calc(-1 * var(--bod-gutter-x));
+}
+
+.bod-site .container [class*="col-"] {
+  padding-left: var(--bod-gutter-x);
+  padding-right: var(--bod-gutter-x);
+}

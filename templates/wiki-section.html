@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{ section.title }} | {{ config.title }}{% endblock %}
+{% block meta_desc %}
+<meta name="description" content="{{ section.description | default(value='Documentation technique — wiki') }}">
+{% endblock %}
+{% block content %}
+<div class="container">
+  <article class="wiki-content wiki-content--index">
+    <nav class="wiki-breadcrumb" aria-label="Fil d'Ariane">
+      <a href="{{ get_url(path='@/_index.md') }}">Accueil</a>
+      <span class="wiki-breadcrumb__sep" aria-hidden="true">/</span>
+      <span aria-current="page">{{ section.title }}</span>
+    </nav>
+    {{ section.content | safe }}
+  </article>
+</div>
+{% endblock %}

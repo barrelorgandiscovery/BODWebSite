@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------------------
+// Barrel Organ Discovery — design tokens (maintain palette & radii here)
+// Derived from legacy site: blue gradient hero #2672D7 → #012665, light hero title #f8f8f8
+// -----------------------------------------------------------------------------
+
+// SCSS variables (for use inside Sass functions / Bootstrap overrides)
+$mcc-blue-400: #2672d7;
+$mcc-blue-500: #1e5cb8;
+$mcc-blue-900: #012665;
+// Hero gradient (original reference: ~#3366cc → #002266)
+$hero-blue-start: #3366cc;
+$hero-blue-end: #002266;
+$mcc-navy-950: #011a42;
+
+$text-on-dark: #f8f8f8;
+$text-body: #333;
+$text-muted: #777;
+$border-subtle: #e5e5e5;
+$panel-heading-bg: #f0f5ff;
+$heading-navy: #001a4d;
+$feedback-info-bg: #e8f1fb;
+$feedback-info-border: #b8d4f0;
+$feedback-success-bg: #edf7ed;
+$feedback-success-border: #c3e6cb;
+
+// Global CSS custom properties (usable in plain CSS / devtools)
+:root {
+  --bod-font-sans: "Rubik", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --bod-color-primary: #{$mcc-blue-400};
+  --bod-color-primary-mid: #{$mcc-blue-500};
+  --bod-color-primary-dark: #{$mcc-blue-900};
+  --bod-color-primary-darker: #{$mcc-navy-950};
+
+  --bod-header-start: #{$mcc-blue-400};
+  --bod-header-end: #{$mcc-blue-900};
+
+  --bod-text-on-dark: #{$text-on-dark};
+  --bod-text-body: #{$text-body};
+  --bod-text-muted: #{$text-muted};
+
+  // Content width + horizontal gutters (used for .container padding and grid column gutters)
+  --bod-content-max: 1000px;
+  --bod-gutter-x: 24px;
+
+  // Inner padding for panels / jumbotrons (Bootstrap defaults feel tight on this site)
+  --bod-space-card-pad-x: 22px;
+  --bod-space-card-pad-y: 20px;
+
+  // Main menu: thin white bar (original reference)
+  --bod-topbar-bg: #ffffff;
+  --bod-topbar-text: #777777;
+  --bod-topbar-border: #e8e8e8;
+  --bod-nav-bg: #ffffff;
+  --bod-nav-link: #666666;
+  --bod-nav-link-hover: #333333;
+  --bod-nav-badge-bg: #555555;
+  --bod-nav-badge-text: #ffffff;
+
+  // Hero band (home): diagonal blue like original screenshot
+  --bod-hero-start: #{$hero-blue-start};
+  --bod-hero-end: #{$hero-blue-end};
+
+  --bod-heading-page: #{$heading-navy};
+
+  --bod-border-subtle: #{$border-subtle};
+  --bod-shadow-header: 0 1px 0 rgba(0, 0, 0, 0.06);
+
+  --bod-link: #{$mcc-blue-400};
+  --bod-link-hover: #{$mcc-blue-900};
+
+  --bod-panel-heading-bg: #{$panel-heading-bg};
+  --bod-panel-border: #{$border-subtle};
+
+  --bod-radius-sm: 4px;
+  --bod-radius-md: 6px;
+  // Badges (nav year labels, panel tags, inline labels)
+  --bod-badge-radius: 5px;
+
+  --bod-space-topbar-pad-y: 6px;
+  --bod-space-nav-pad-y: 10px;
+}

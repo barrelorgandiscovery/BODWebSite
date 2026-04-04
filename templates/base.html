@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="barrel,organ,street organ,software,logiciel,APrint,APrint Studio,instrument,tools,books,orgue de barbarie">
+    {% block meta_desc %}
+    <meta name="description" content="{{ config.description }}">
+    {% endblock %}
+    <title>{% block title %}{{ config.title }}{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha256-HZWZAN/WUmt3yvgCXN/cCUmb5h7fnpIl66NK1OGn45k=" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ get_url(path='site.css') }}">
+    {% block extra_head %}{% endblock %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S6YMVGHQTH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-S6YMVGHQTH');
+    </script>
+</head>
+<body class="bod-site">
+{% include "nav.html" %}
+<main id="contenu-principal" class="bod-main">
+{% block content %}{% endblock %}
+</main>
+<footer class="bs-docs-footer" role="contentinfo">
+    <p class="text-center">Propulsé par <a href="https://www.getzola.org/">Zola</a> et Bootstrap</p>
+</footer>
+</body>
+</html>

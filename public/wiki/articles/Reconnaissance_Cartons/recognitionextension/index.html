@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="barrel,organ,street organ,software,logiciel,APrint,APrint Studio,instrument,tools,books,orgue de barbarie">
+    
+<meta name="description" content="APrint Studio, orgues de barbarie, documentation et perforatrices.">
+
+    <title>RecognitionExtension | Barrel Organ Discovery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha256-HZWZAN/WUmt3yvgCXN/cCUmb5h7fnpIl66NK1OGn45k=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.barrel-organ-discovery.org/site/site.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S6YMVGHQTH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-S6YMVGHQTH');
+    </script>
+</head>
+<body class="bod-site">
+
+<header class="site-header" role="banner">
+  <div class="site-header__menu-bar">
+    <div class="container">
+      <div class="site-header__row">
+        <a class="site-header__brand" href="https://www.barrel-organ-discovery.org/site/" aria-label="Barrel Organ Discovery — accueil">
+          <img class="site-header__brand-mark" src="https://www.barrel-organ-discovery.org/site/resources/organ_small.png" alt="" width="36" height="36" loading="eager" decoding="async">
+          <span class="site-header__brand-text">
+            <span class="site-header__brand-name">Barrel Organ Discovery</span>
+          </span>
+        </a>
+        <nav class="site-nav-wrap" aria-label="Navigation principale">
+          <ul class="site-nav" id="site-main-nav">
+            <li><a href="https://www.barrel-organ-discovery.org/site/about/"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> A Propos</a></li>
+            <li><a href="https://www.barrel-organ-discovery.org/site/gallery/">Galerie</a></li>
+            <li><a href="https://www.barrel-organ-discovery.org/instruments/">Instruments</a></li>
+            <li><a href="https://www.barrel-organ-discovery.org/doc/2020">Documentation</a></li>
+            <li><a href="https://www.barrel-organ-discovery.org/site/wiki/">Wiki</a></li>
+            <li><a href="https://vimeo.com/showcase/8678928">Videos</a></li>
+            <li><a href="https://www.barrel-organ-discovery.org/site/download/"><span class="glyphicon glyphicon-save" aria-hidden="true"></span> Téléchargements LOGICIELS</a></li>
+            <li><a href="https://www.barrel-organ-discovery.org/site/laser/"><span class="badge">2020</span> Krunch Laser</a></li>
+            <li><a href="https://www.barrel-organ-discovery.org/site/krunch/"><span class="badge">2018</span> Les Perforatrices</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="contenu-principal" class="bod-main">
+
+<div class="container">
+  <article class="page-content">
+    <h1 id="reconnaissance-de-disques-carton">Reconnaissance de disques carton</h1>
+<hr />
+<p><em>Patrice Freydiere</em><br/>
+<em>Novembre 2014</em> <br/></p>
+<p><strong>Cette fonctionnalité est utilisable à partir de la version 2014.11 d'APrint Studio</strong></p>
+<p>Cette extension, intégrée au logiciel APrint Studio,  permet la récupération sous forme numérique d'un disque carton (Ariston, Herophon ..) à partir d'une photographie.</p>
+<p>L'utilisation peut être diverse :</p>
+<ul>
+<li>Restoration d'un disque endommagé</li>
+<li>Réarrangement pour un autre instrument</li>
+<li>Ecoute du disque lorsque l'on a pas l'instrument</li>
+</ul>
+<p>Le resultat obtenu est un carton virtuel sous forme de "carton", réutilisable ou exportable en MIDI.</p>
+<p>Il est possible de créer au final, une sortie vectorielle pour impression ou découpe. En réutilisant la fonctionnalité d'export DXF, format généralement utilisé pour les machines LAZER.</p>
+<p><a rel="external" href="https://www.youtube.com/watch?v=ue2M6RD_gAs">Une démonstration d'utilisation est accessible ici</a></p>
+<p><em>Exemple de photographie utilisée pour une reconnaissance de disque :</em></p>
+<img src="disque.png" width=400 />
+<p><em>Resultat obtenu dans la vue carton du logiciel APrint Studio :</em></p>
+<img src="result.png" width=400 /> 
+<h2 id="demarche">Démarche</h2>
+<p>Pour obtenir ce resultat deux étapes sont nécessaires, la première est une étape de définition de l'instrument et de sa gamme. Certains instruments sont déjà définis et récupérables directement sur le site WEB <a rel="external" href="http://www.barrel-organ-discovery.org/instruments">http://www.barrel-organ-discovery.org/instruments</a>. Si ce n'est pas le cas, APrint Studio permet l'ajout ou la redéfinition d'un nouvel instrument.  Nous fournissons des exemple de définition d'instrument.</p>
+<p>La seconde étape est d'utiliser l'assistant de reconnaissance pour numériser le carton, présentée ci dessous.</p>
+<h2 id="utilisation-de-l-assistant">Utilisation de l'assistant</h2>
+<p>L'assistant propose plusieures étapes :</p>
+<ol>
+<li>la définition du centre du disque</li>
+<li>la définition du contour du disque</li>
+<li>la définition du début du disque</li>
+<li>la numérisation des trous du disque</li>
+</ol>
+<h3 id="definition-du-centre-du-disque">Définition du centre du disque</h3>
+<p>Cette étape permet aau logiciel de localiser le centre du disque. La bonne connaissance du centre du disque permet de redresser ou corriger les déformations du carton, ou de la prise de vue.</p>
+<p>Le point important de cette étape est la connaissance du centre du disque, des outils permettent alors de prendre une serie de points sur une ellipse (qui peut être le trou de centrage ou une gravure sur le carton). Les points saisis permettent de calculer le centre d'une ellipse. Un minimum de 5 points est attendu, mais il est possible pour avoir plus de précision d'en saisir plus.</p>
+<img src="step2.png" width=400 />
+<h3 id="definition-du-contour-du-disque">Définition du contour du disque</h3>
+<p>La seconde étape de l'assistant demande à préciser le contour du disque. Ceci est réalisé de la même façon que l'étape précédente, c'est à dire en saisissant une serie de points sur le contour du disque.
+Il se peut que la photo soit déformée et ne permette pas directement de pouvoir correctement lire les trous (mal qualifiés). La connaissance du contour permet ainsi de mieux prendre en compte les déformations et redresser au mieux la photo pour la mettre à plat.</p>
+<img src="step3.png" width=400 />
+<h3 id="definition-du-debut-du-disque">Définition du début du disque</h3>
+<p>Cette nouvelle étape demande à définir le debut du carton (emplacement où le disque commence sa lecture). La saisie d'un seul point est nécessaire sur le contour, comme indiqué sur la photo en jaune.</p>
+<img src="step4.png" width=400 />
+<h3 id="numerisation-du-disque">Numérisation du disque</h3>
+<p>Les étapes précédentes on permis de prendre connaissance de la geometrie du carton, de la gamme et ses différents paramètre. Le disque est alors "déroulé" pour permettre une saisie à la façon "Carton".</p>
+<p>Cette étape permet la numerisation des trous au dessus de la photo.</p>
+<p>On retrouve ici dans l'écran, l'ensemble des outils principaux de manipulation du carton, avec l'outil permettant la définition d'un trou, ou sa suppression.</p>
+<p>L'étape peut etre réalisée manuellement, ou vous pouvez utiliser un bouton de reconnaissance automatique, utilisant un algorithme qui donne de bons resultats pour une première reconnaissance. La reconnaissance automatique peut être complétée par une série d'étapes manuelles avec les outils si certains trous ont été manqués ou doivent être complétés, ou même réduits (car trop grands).</p>
+<img src="laststep.png" width=400 />
+<h3 id="terminer-l-assistant">Terminer l'assistant</h3>
+<p>La fin de l'assistant importe dans APrint Studio le contenu du disque dans une fenetre carton, permettant sa sauvegarde, son export en fichier MIDI. Référez vous alors à la documentation et aux tutoriaux pour plus d'informations.</p>
+<p><em>le resultat obtenu:</em></p>
+<img src="result.png" width=400 />
+
+  </article>
+</div>
+
+</main>
+<footer class="bs-docs-footer" role="contentinfo">
+    <p class="text-center">Propulsé par <a href="https://www.getzola.org/">Zola</a> et Bootstrap</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="barrel,organ,street organ,software,logiciel,APrint,APrint Studio,instrument,tools,books,orgue de barbarie">
+    
+<meta name="description" content="APrint Studio, orgues de barbarie, documentation et perforatrices.">
+
+    <title>DOCUMENT GRBL ET INITIALISATION POUR COMMANDER KRUNCH LASER | Barrel Organ Discovery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha256-HZWZAN/WUmt3yvgCXN/cCUmb5h7fnpIl66NK1OGn45k=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.barrel-organ-discovery.org/site/site.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S6YMVGHQTH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-S6YMVGHQTH');
+    </script>
+</head>
+<body class="bod-site">
+
+<header class="site-header" role="banner">
+  <div class="site-header__menu-bar">
+    <div class="container">
+      <div class="site-header__row">
+        <a class="site-header__brand" href="https://www.barrel-organ-discovery.org/site/" aria-label="Barrel Organ Discovery — accueil">
+          <img class="site-header__brand-mark" src="https://www.barrel-organ-discovery.org/site/resources/organ_small.png" alt="" width="36" height="36" loading="eager" decoding="async">
+          <span class="site-header__brand-text">
+            <span class="site-header__brand-name">Barrel Organ Discovery</span>
+          </span>
+        </a>
+        <nav class="site-nav-wrap" aria-label="Navigation principale">
+          <ul class="site-nav" id="site-main-nav">
+            <li><a href="https://www.barrel-organ-discovery.org/site/about/"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> A Propos</a></li>
+            <li><a href="https://www.barrel-organ-discovery.org/site/gallery/">Galerie</a></li>
+            <li><a href="https://www.barrel-organ-discovery.org/instruments/">Instruments</a></li>
+            <li><a href="https://www.barrel-organ-discovery.org/doc/2020">Documentation</a></li>
+            <li><a href="https://www.barrel-organ-discovery.org/site/wiki/">Wiki</a></li>
+            <li><a href="https://vimeo.com/showcase/8678928">Videos</a></li>
+            <li><a href="https://www.barrel-organ-discovery.org/site/download/"><span class="glyphicon glyphicon-save" aria-hidden="true"></span> Téléchargements LOGICIELS</a></li>
+            <li><a href="https://www.barrel-organ-discovery.org/site/laser/"><span class="badge">2020</span> Krunch Laser</a></li>
+            <li><a href="https://www.barrel-organ-discovery.org/site/krunch/"><span class="badge">2018</span> Les Perforatrices</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="contenu-principal" class="bod-main">
+
+<div class="container">
+  <article class="page-content">
+    <h1 id="document-grbl-et-initialisation-pour-commander-krunch-laser">DOCUMENT GRBL ET INITIALISATION POUR COMMANDER KRUNCH LASER</h1>
+<p>Par Jean Pierre Rosset</p>
+<p>Pour utiliser une machine Laser avec un Arduino ou d'autres microcontrolleurs, <strong>la version 1.1 de GRBL est nécessaire</strong>.</p>
+<p><strong>ATTENTION :</strong> Pour les version Perfo (avec Poinçons), l'ancienne version 0.9 Ajustée pour intégrer le M100 est nécessaire, vous trouverez plus d'information sur <a rel="external" href="https://github.com/barrelorgandiscovery/grblPunch">cette version spécifique à cette URL</a>. et des <a rel="external" href="http://www.barrel-organ-discovery.org/site/krunch.html">informations complementaires de mise en oeuvre sont accessibles à cette URL</a>. <a rel="external" href="http://www.barrel-organ-discovery.org/site/download.html">Avec l'ensemble des logiciels ici</a></p>
+<p>Dans L'utilisation Laser, ATTENTION, GRBL A Changé le câblage et le rôle des PINS</p>
+<p><strong>L’ancienne version de GRBL (0.8-0.9) l'attribution des pins est la suivante :</strong></p>
+<p><img src="https://www.barrel-organ-discovery.org/site/wiki/articles/Articles_Perforatrice_Lazer/setup-perfo-lazer-grbl/oldgrbl_pins.png" alt="" /></p>
+<p><strong>DANS la Nouvelle version de GRBL l’attribution diffère au niveau des pins 11 et 12 :</strong></p>
+<p><img src="https://www.barrel-organ-discovery.org/site/wiki/articles/Articles_Perforatrice_Lazer/setup-perfo-lazer-grbl/warning.png" alt="" /></p>
+<p><img src="https://www.barrel-organ-discovery.org/site/wiki/articles/Articles_Perforatrice_Lazer/setup-perfo-lazer-grbl/new11grblpins.png" alt="" /></p>
+<h1 id="comment-obtenir-un-grbl-1-1-adapte-pour-la-commande-des-perforatrices-laser"><strong>Comment obtenir un GRBL 1.1 adapté pour la commande des perforatrices Laser :</strong></h1>
+<p>Pour que la commande $H puisse être active et ainsi réaliser le Homing uniquement sur l’axe X, c’est-à dire la mise au « zéro mécanique » de la machine, il faut un GRBL 1.1 adapté. En effet le GRBL 1.1 usuel téléchargé depuis internet, est souvent compilé pour réaliser le Homing sur les 3 axes X, Y et Z.</p>
+<p>Pour les perforatrices, il faut réaliser le Homing que sur l’axe X (position 0 de la tête laser).</p>
+<h3 id="1-telecharger-le-code-source-grbl-et-l-adapter">1 - Télécharger le code source GRBL et l’adapter</h3>
+<p>Télécharger le fichier ZIP depuis https://github.com/grbl/grbl, bouton « Code » et « Download ZIP ». Décompresser le fichier.</p>
+<p>C’est avant la compilation du fichier initial qu’il faut adapter le fichier grbl/grbl/config.h.</p>
+<p>Là où le fichier définit les variables de compilation HOMING_CYCLE_0/1/2, remplacer toutes les définitions par :</p>
+<p>#define HOMING_CYCLE_0 (1&lt;&lt;X_AXIS)</p>
+<p>et pas de HOMING_CYCLE_1 ou HOMING_CYCLE_2.</p>
+<p>(ceci vient du commentaire https://github.com/grbl/grbl/issues/1440)</p>
+<h3 id="2-inclure-la-librairie-grbl-modifiee-dans-arduino-ide">2 - Inclure la librairie GRBL modifiée dans Arduino IDE</h3>
+<p>Tout d’abord, supprimer les anciennes versions de GRBL dans Ardunio IDE (dossier Documents/Arduino/libraries).</p>
+<p>Ensuite, importer le dossier grbl/grbl comme librairie dans Arduino IDE (Menu Croquis / Inclure une bibliothèque / Ajouter la bibliothèque ZIP), et sélectionner le dossier grbl/grbl (même si ce n’est pas à proprement parler un fichier ZIP ! cela fonctionne – le ZIP que nous avons téléchargé n’a pas de config.h adapté).</p>
+<h3 id="3-compiler-et-televerser-grbl">3 - Compiler et téléverser GRBL</h3>
+<p>Ouvrir le croquis grblUpload dans le dossier grbl/grbl/examples.</p>
+<p>Menu Croquis / Téléverser.</p>
+<h3 id="4-exporter-le-fichier-hex">4 - Exporter le fichier HEX</h3>
+<p>Pour distribuer cette version de GRBL, Croquis / Exporter les binaires compilées.</p>
+<p>Deux fichiers <strong>.hex</strong> sont créés dans le dossier <strong>grbl/grbl/examples/grblUpload</strong>. La distinction entre les deux fichiers n’est, semble-t-il, pas importante si on utiliser la programmation via USB.</p>
+<h1 id="parametrage-grbl-1-1-sur-arduino"><strong>Paramétrage GRBL 1.1 sur Arduino :</strong></h1>
+<p>Le paramétrage se fait alors que l’Arduino est branché et que vous êtes en liaison série avec lui.
+Il existe beaucoup de logiciels différents permettant d’envoyer le G-Code et de contrôler GRBL. Nous allons paramétrer GRBL le plus simplement du monde avec le logiciel Universal Gcode Sender (UGS), en envoyant manuellement les commandes.</p>
+<h3 id="connexion-a-grbl-arduino-en-utilisant-universal-gcode-sender">Connexion à GRBL Arduino en utilisant Universal GCode Sender</h3>
+<p><strong>Lancer UniversalGcodeSender</strong> : Attention sélectionner le bon port COM et Baud : 115200 et Ouvrir</p>
+<p><img src="https://www.barrel-organ-discovery.org/site/wiki/articles/Articles_Perforatrice_Lazer/setup-perfo-lazer-grbl/ugcs1.png" alt="" /></p>
+<p>Sélectionner Dans « Contrôle Machine » : La liste des paramètres de réglage est donnée par la commande :   $$ et valider au clavier par « ENTER ».</p>
+<p>Pour modifier ces paramètres, il faut sélectionner « Commands », dans la fenêtre taper par exemple $100=100 et valider au clavier par « ENTER ».</p>
+<p>Si vous refaite $$, la valeur que vous avez mise (100) sera à la ligne $100 changée en $100=100.</p>
+<p>Le paramétrage utilisé pour la perfo de Jean Pierre :</p>
+<p><img src="https://www.barrel-organ-discovery.org/site/wiki/articles/Articles_Perforatrice_Lazer/setup-perfo-lazer-grbl/parameters_jeanpierre.png" alt="" /></p>
+<h4 id="pour-calibrer-ou-modifier"><strong>Pour calibrer ou modifier :</strong></h4>
+<ul>
+<li>Le nombre d’impulsions par mm de déplacement en X (fourche) :		 $100</li>
+<li>Le nombre d’impulsions par mm de déplacement en Y (avance carton) :	$101</li>
+<li>La vitesse en déplacement de l’axe X (le laser) :				$110</li>
+<li>L’accélération en déplacement de l’axe X (le laser) :			$120</li>
+<li>La vitesse en déplacement de l’axe Y (avance carton) :			$111</li>
+<li>L’accélération en déplacement de l’axe Y (avance carton) :		$121</li>
+</ul>
+<h4 id="description-des-fonctions-des-parametres"><strong>Description des fonctions des paramètres :</strong></h4>
+<table><thead><tr><th><strong>Settings and sample values</strong></th><th><strong>Description</strong></th></tr></thead><tbody>
+<tr><td>$0=20</td><td>Step pulse, 			microseconds</td></tr>
+<tr><td>$1=255</td><td>Step idle delay, 			milliseconds</td></tr>
+<tr><td>$2=0</td><td>Step port invert, 			mask</td></tr>
+<tr><td>$3=2</td><td>Direction port 			invert, mask</td></tr>
+<tr><td>$4=0</td><td>Step enable invert, 			boolean</td></tr>
+<tr><td>$5=1</td><td>Limit pins invert, 			boolean</td></tr>
+<tr><td>$6=0</td><td>Probe pin invert, 			boolean</td></tr>
+<tr><td>$10=2</td><td>Status report, mask</td></tr>
+<tr><td>$11=0.010</td><td>Junction deviation, 			mm</td></tr>
+<tr><td>$12=0.002</td><td>Arc tolerance, mm</td></tr>
+<tr><td>$13=0</td><td>Report inches, 			boolean</td></tr>
+<tr><td>$20=0</td><td>Soft limits, boolean</td></tr>
+<tr><td>$21=1</td><td>Hard limits, boolean</td></tr>
+<tr><td>$22=1</td><td>Homing cycle, boolean</td></tr>
+<tr><td>$23=1</td><td>Homing dir invert, 			mask</td></tr>
+<tr><td>$24=50.000</td><td>Homing feed, mm/min</td></tr>
+<tr><td>$25=1500.000</td><td>Homing seek, mm/min</td></tr>
+<tr><td>$26=1</td><td>Homing debounce, 			milliseconds</td></tr>
+<tr><td>$27=1.000</td><td>Homing pull-off, mm</td></tr>
+<tr><td>$30=1000.</td><td>Max spindle speed, 			RPM</td></tr>
+<tr><td>$31=0.</td><td>Min spindle speed, 			RPM</td></tr>
+<tr><td>$32=1</td><td>Laser mode, boolean</td></tr>
+<tr><td>$100=80.000</td><td>X steps/mm</td></tr>
+<tr><td>$101=29.800</td><td>Y steps/mm</td></tr>
+<tr><td>$102=250.000</td><td>Z steps/mm</td></tr>
+<tr><td>$110=500.000</td><td>X Max rate, mm/min</td></tr>
+<tr><td>$111=500.000</td><td>Y Max rate, mm/min</td></tr>
+<tr><td>$112=500.000</td><td>Z Max rate, mm/min</td></tr>
+<tr><td>$120=10.000</td><td>X Acceleration, 			mm/sec^2</td></tr>
+<tr><td>$121=10.000</td><td>Y Acceleration, 			mm/sec^2</td></tr>
+<tr><td>$122=10.000</td><td>Z Acceleration, 			mm/sec^2</td></tr>
+<tr><td>$130=200.000</td><td>X Max travel, mm</td></tr>
+<tr><td>$131=200.000</td><td>Y Max travel, mm</td></tr>
+<tr><td>$132=200.000</td><td>Z Max travel, mm</td></tr>
+</tbody></table>
+<h3 id="reglage-du-decalage-entre-le-homing-et-le-bord-de-reference-du-carton"><strong>Réglage du décalage entre le homing et le bord de référence du carton</strong></h3>
+<ul>
+<li>Dans « Contrôle Machine » : La machine est mise au « HOMING » par la commande $H disponible par un bouton.</li>
+<li>Pour déplacer le rayon laser (réglé au minimum) sur le bord de référence du carton, il faut générer un « offset » :</li>
+<li>La commande est à faire une seule fois. L’offset reste stocké dans le Arduino même s’il est non alimenté).</li>
+<li>Avec le bouton X+ et en ajustant Step size amener le rayon laser en bordure du carton (bord de référence).</li>
+<li>Dans « Commands » et dans la fenêtre, taper : G10L20P1X0 (l’origine carton est mémorisée dans l’EEPROM).</li>
+<li>Ce paramétrage peut se voir avec la commande : $#</li>
+<li>Puis vous pouvez tester l’autre limite du carton en tapant dans « Commands », dans la fenêtre, G0X130,
+faire au clavier « Enter ». Pour un carton de 130 mm de largeur, la tête laser se déplace et le rayon laser doit être juste sur l’autre bord du carton.</li>
+</ul>
+<h4 id="pour-utilisation-en-mode-laser-dans-aprint">Pour utilisation en mode laser dans APrint</h4>
+<p>S'assurer que le GRBL est bien en mode "Lazer" : Commande $32=1</p>
+<p>Configurez le retour d'information $10=2</p>
+<p><strong>Nota</strong>: ce mode de retour, permet à APrint de connaitre les ordres disponibles dans la mémoire de GRBL et de pouvoir alimenter la machine au fur et à mesure. Dans le cas où la machine devient lente, ou se bloque: vérifiez ce paramètre.</p>
+<p><a rel="external" href="https://github.com/gnea/grbl/wiki/Grbl-v1.1-Laser-Mode">plus d'information à cette adresse (documentation du mode laser GRBL 1.1)</a></p>
+<h1 id="utilisation-dans-aprint">Utilisation dans APrint</h1>
+<p>Une fois le GRBL de configuré, dans la vue carton d'APrint, <a rel="external" href="https://www.barrel-organ-discovery.org/site/doc/2020/product/krunch/perfo_lazer/">vous pouvez suivre cet article, dans la documentation</a></p>
+
+  </article>
+</div>
+
+</main>
+<footer class="bs-docs-footer" role="contentinfo">
+    <p class="text-center">Propulsé par <a href="https://www.getzola.org/">Zola</a> et Bootstrap</p>
+</footer>
+</body>
+</html>

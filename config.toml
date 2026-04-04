@@ -1,0 +1,14 @@
+# Zola — Barrel Organ Discovery
+# Build: `zola build` (output: `public/`)
+# Deploy under https://www.barrel-organ-discovery.org/site/ : scripts/build-site-deploy.sh
+
+title = "Barrel Organ Discovery"
+description = "APrint Studio, orgues de barbarie, documentation et perforatrices."
+base_url = "/"
+compile_sass = true
+build_search_index = false
+taxonomies = []
+
+[markdown]
+# CommonMark + tables, task lists, strikethrough (wiki content compatibility)
+render_emoji = false

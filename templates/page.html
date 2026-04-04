@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+{% block meta_desc %}
+<meta name="description" content="{{ page.description | default(value=config.description) }}">
+{% endblock %}
+{% block content %}
+<div class="container">
+  <article class="page-content">
+    {{ page.content | safe }}
+  </article>
+</div>
+{% endblock %}

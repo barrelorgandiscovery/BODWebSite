@@ -1,0 +1,289 @@
+@use "tokens" as *;
+
+// -----------------------------------------------------------------------------
+// Badges — padding, rounding, spacing (Bootstrap 3 defaults are easy to crush with overrides)
+// -----------------------------------------------------------------------------
+.bod-site .badge {
+  display: inline-block;
+  border-radius: var(--bod-badge-radius);
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.35;
+  vertical-align: middle;
+}
+
+.bod-site .panel-heading .badge {
+  margin-left: 0.25rem;
+  margin-right: 0.2rem;
+}
+
+.bod-site .panel-body p .badge {
+  margin-left: 0.35rem;
+  margin-right: 0.15rem;
+}
+
+// -----------------------------------------------------------------------------
+// Panels, page chrome, footer, feedback (alerts)
+// -----------------------------------------------------------------------------
+
+.bod-site .panel {
+  border-color: var(--bod-panel-border);
+  border-radius: var(--bod-radius-md);
+  box-shadow: 0 1px 2px rgba(1, 38, 101, 0.06);
+}
+
+.bod-site .panel > .panel-heading {
+  padding: 14px var(--bod-space-card-pad-x);
+}
+
+.bod-site .panel-default > .panel-heading {
+  background: var(--bod-panel-heading-bg);
+  border-bottom: 1px solid rgba(0, 26, 77, 0.08);
+  color: var(--bod-heading-page);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.bod-site .panel-body {
+  padding: var(--bod-space-card-pad-y) var(--bod-space-card-pad-x);
+}
+
+.bod-site .panel-primary {
+  border-color: rgba(38, 114, 215, 0.35);
+}
+
+.bod-site .panel-primary > .panel-heading {
+  background: linear-gradient(
+    to right,
+    rgba(38, 114, 215, 0.12),
+    rgba(1, 38, 101, 0.08)
+  );
+  border-bottom-color: rgba(38, 114, 215, 0.25);
+  color: var(--bod-color-primary-dark);
+}
+
+.bod-site .panel-info > .panel-heading {
+  background: var(--feedback-info-bg);
+  border-bottom-color: var(--feedback-info-border);
+  color: var(--bod-color-primary-dark);
+}
+
+.bod-site .jumbotron {
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 248, 252, 1) 0%,
+    #fff 100%
+  );
+  border: 1px solid var(--bod-panel-border);
+  border-radius: var(--bod-radius-md);
+  padding: 2rem var(--bod-space-card-pad-x);
+}
+
+.bod-site .jumbotron h1 {
+  color: var(--bod-color-primary-dark);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.bod-site .jumbotron p {
+  margin-bottom: 1rem;
+}
+
+.bod-site .jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.bod-site .jumbotron .btn {
+  margin-bottom: 10px;
+}
+
+// Footer
+.bs-docs-footer {
+  padding: 2rem var(--bod-gutter-x);
+  margin-top: 4rem;
+  color: var(--bod-text-muted);
+  text-align: center;
+  border-top: 1px solid var(--bod-border-subtle);
+  background: #fafbfc;
+  font-size: 14px;
+}
+
+// Feedback / alerts — semantic states
+.bod-site .alert {
+  border-radius: var(--bod-radius-md);
+  border-width: 1px;
+}
+
+.bod-site .alert-success {
+  background: var(--feedback-success-bg);
+  border-color: var(--feedback-success-border);
+  color: #155724;
+}
+
+.bod-site .alert-info {
+  background: var(--feedback-info-bg);
+  border-color: var(--feedback-info-border);
+  color: #0c5460;
+}
+
+// Primary actions — align with brand blue
+// Explicit label + glyph + badge colors so body link styles never win on <a class="btn">.
+.bod-site .btn-primary,
+.bod-site .btn-primary .glyphicon {
+  color: #fff;
+}
+
+.bod-site .btn-primary {
+  background-color: var(--bod-color-primary);
+  border-color: var(--bod-color-primary-mid);
+}
+
+.bod-site .btn-primary:hover,
+.bod-site .btn-primary:focus,
+.bod-site .btn-primary:active {
+  background-color: var(--bod-color-primary-dark);
+  border-color: var(--bod-color-primary-dark);
+  color: #fff;
+}
+
+.bod-site .btn-primary .badge {
+  color: var(--bod-color-primary);
+  background-color: #fff;
+}
+
+.bod-site .btn-info,
+.bod-site .btn-info .glyphicon {
+  color: #fff;
+}
+
+.bod-site .btn-info {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.bod-site .btn-info:hover,
+.bod-site .btn-info:focus,
+.bod-site .btn-info:active {
+  background-color: #31b0d5;
+  border-color: #269abc;
+  color: #fff;
+}
+
+.bod-site .btn-info .badge {
+  color: #5bc0de;
+  background-color: #fff;
+}
+
+.bod-site .youtube-embed iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+// Thumbnail embeds (e.g. laser.html): fixed pixel width would overflow narrow viewports
+.bod-main .thumbnail iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+// Download page — screenshot grid (thumbnail layout; CTA buttons: _download_cta.scss)
+.bod-download-page .thumbnail {
+  height: auto;
+  min-height: 0;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.bod-download-page .thumbnail > img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 240px;
+  object-fit: contain;
+  object-position: top center;
+  flex-shrink: 0;
+}
+
+.bod-download-page .thumbnail .caption {
+  flex: 1 1 auto;
+  padding: 12px 12px 10px;
+}
+
+.bod-download-page .thumbnail .caption h3 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--bod-heading-page);
+}
+
+.bod-download-page .thumbnail .caption p {
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--bod-text-muted);
+}
+
+// Gallery — wider reading column + embeds fill each grid cell (16:9), captions stay under each thumb
+.bod-gallery-page.bod-gallery-page--wide.container {
+  max-width: 1140px;
+}
+
+.bod-gallery-page .thumbnail {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 8px;
+  margin-bottom: 18px;
+}
+
+.bod-gallery-page .thumbnail iframe {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  min-height: 120px;
+  margin: 0;
+  border: 0;
+  border-radius: var(--bod-radius-sm);
+  background: #0d0d0d;
+}
+
+.bod-gallery-page .thumbnail .caption {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: none;
+  margin: 10px 0 0;
+  padding: 0 4px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--bod-text-body);
+  text-align: left;
+}
+
+.bod-gallery-page .panel-heading .panel-title {
+  line-height: 1.35;
+}
+
+.bod-gallery-page .panel-heading .panel-title a {
+  font-weight: 600;
+}
+
+.bod-gallery-page .bod-gallery__playlist {
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Kill any stray list bullets if user-agent / resets conflict with .site-nav
+.bod-site .site-header ul.site-nav {
+  list-style-type: none !important;
+}
